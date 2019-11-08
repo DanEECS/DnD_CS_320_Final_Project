@@ -68,4 +68,21 @@ Chain Mail | 16 | Str 13
 Splint | 17 | Str 15
 Plate | 18 | Str 15
 
-Shield | +2
+Shield | +2 AC
+
+Equipment Packs
+(Add to end of Equipment List enblock)
+
+Burglar’s Pack: Backpack, Bag of Ball Bearing(1000), 10ft of Sting, Bell, 5 Candles, Crowbar, Hammer, 10 Pitons, Hooded Lantern, 2 Flasks of Oil, 5 Days of Ration, Waterskin, 50ft of Hemp Rope
+
+Diplomat’s Pack: Chest, 2 Map Cases, Fine Clothes, Bottle of Ink, Ink Pen, Lamp, 2 Flasks of Oil, 5 Sheets of Paper, Vial of Perfume, Sealing Wax, Soap
+
+Dungeoneer’s Pack: Backpack, Crowbar, Hammer, 10 Pitons, 10 Torches, Tinderbox, 10 Days of Rations, Waterskin, 50ft of Hemp Rope.
+
+Entertainer’s Pack: Backpack, Bedroll, 2 Costumes, 5 Candles, 5 Days of Rations, Waterskin, Disguise Kit
+
+Explorer’s Pack: Backpack, Bedroll, Mess Kit, Tinderbox, 10 Torches, 10 Days of Rations, Waterskin, 50ft of Hemp Rope
+
+Priest’s Pack: Backpack, Blanket, 10 Candles, Tinderbox, Alms Box, 2 Blocks of Incense, Censer, Vestments, 2 Days of Rations, Waterskin
+
+Scholar’s Pack: Backpack, Book of Lore, Bottle of Ink, Ink Pen, 10 Sheets of Parchment, Little Bag of Sand, Small Knife
