@@ -1,0 +1,71 @@
+Weapon Lists
+P = Piercing
+B = Bludgeoning
+S = Slashing
+Name | Damage | Properties 
+Simple Melee Weapons
+Club | 1d4 B | Light
+Dagger | 1d4 P | Finesse, Light, Thrown (20/60)
+Greatclub | 1d8 B | Two-handed
+Handaxe | 1d6 S | Light, Thrown (20/60)
+Javelin | 1d6 P | Thrown (30/120)
+Light Hammer | 1d4 B | Light, Thrown (20/60)
+Mace | 1d6 B | ---
+Quarterstaff | 1d6 B | Versatile (1d8)
+Sickle | 1d4 S | Light
+Spear | 1d6 P | Thrown (20/60), Versatile(1d8)
+
+Simple Ranged Weapons
+Light Crossbow | 1d8 P | Ammunition(80/320), Loading, Two-handed
+Dart | 1d4 P | Finesse, Thrown(20/60)
+Shortbow | 1d6 P | Ammunition(80/320), Two-handed
+Sling | 1d4 B | Ammunition(30/120)
+
+Martial Melee Weapons
+Battleaxe | 1d8 S | Versitile (1d10)
+Flail | 1d8 B | ---
+Glaive | 1d10 S | Heavy, Reach, Two-handed
+Greataxe | 1d12 S | Heavy, Two-handed
+Greatsword | 2d6 S | Heavy, Two-handed
+Halbred | 1d10 S | Heavy, Reach, Two-handed
+Lance | 1d12 P | Reach, Special
+Longsword | 1d8 S | Versatile(1d10)
+Maul | 2d6 B | Heavy, Two-handed
+Morning Star | 1d8 P | ---
+Pike | 1d10 P | Heavy, Reach, Two-handed
+Rapier | 1d8 P | Finesse
+Scimitar | 1d6 S | Finesse, Light
+Shortsword | 1d6 P | Finesse, Light
+Trident | 1d6 P | Thrown(20/60), Versatile(1d8)
+War Pick | 1d8 P | ---
+Warhammer | 1d8 B | Versatile(1d10)
+Whip | 1d4 S | Finesse, Reach
+
+Martial Ranged Weapons
+Blowgun | 1 P | Ammunition(25/100), Loading
+Hand Crossbow | 1d6 P | Ammunition(30/120), Light, Loading
+Heavy Crossbow | 1d10 P | Ammunition(100/400), Heavy, Loading, Two-handed
+Longbow | 1d8 P | Ammunition(150/600), Heavy, Two-handed
+Net | --- | Special, Thrown(5/15)
+
+Armor
+Name | AC + Dex mod(Dex mod cap) | Str required
+Light Armor
+Padded | 11 + Dex | ---
+Leather | 11 + Dex | ---
+Studded Leather | 12 + Dex | ---
+
+Medium Armor
+Hide | 12 + Dex(2) | ---
+Chain Shirt | 13 + Dex(2) | ---
+Scale Mail | 14 + Dex(2) | ---
+Breastplate | 14 + Dex(2) | ---
+Halfplate | 15 + Dex(2) | ---
+
+Heavy Armor
+Ring Mail | 14 | ---
+Chain Mail | 16 | Str 13
+Splint | 17 | Str 15
+Plate | 18 | Str 15
+
+Shield | +2
