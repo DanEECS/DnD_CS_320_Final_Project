@@ -72,7 +72,32 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                     </div>
                     <div class="four wide column">
                         <div class="dice_roller">
-                            <p class="dark">This is the space for the dice roller</p>
+                            <p class="dark">Dice Roller</p>
+                            <div class="ui centered labeled input">
+                                <input style="width: 125px;" type="text" placeholder="number of dice">
+                                <div class="ui label">d</div>
+                                <div class="ui dropdown label">
+                                    <div class="text"># sides</div>
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item">2</div>
+                                        <div class="item">4</div>
+                                        <div class="item">6</div>
+                                        <div class="item">8</div>
+                                        <div class="item">10</div>
+                                        <div class="item">12</div>
+                                        <div class="item">20</div>
+                                        <div class="item">100</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="dark">Results:
+                                <ul>
+                                    {% for roll in varDiceRoll %}
+                                    <li>
+                                        {{ diceResults|linebreaks }}
+                            </p>
+
                         </div>
                     </div>
                 </div>
@@ -105,6 +130,6 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
             </div>
         </div>
     </div>
-
+    <script src="scripts.js"></script>
 </body>
 </html>

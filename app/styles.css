@@ -33,6 +33,9 @@ https://stackoverflow.com/questions/36310296/looping-through-images-array-and-sh
     opacity: 85%;
     color: lime;
 }
+.ui.labeled.input {
+    padding: 5px;
+}
 /*ADDITIONAL PROJECT STYLES - SOME ARE FROM SAMPLE CODE PROVIDED BY INSTRUCTOR*/
 /*FONT STYLES AND COLORS*/
 * {
