@@ -12,6 +12,7 @@ https://stackoverflow.com/questions/36310296/looping-through-images-array-and-sh
 .ui.container {
     width: 100%;
     height: auto;
+    /*border: 2px solid aqua;*/
 }
 .ui.menu {
     padding-top: 30px;
@@ -22,51 +23,66 @@ https://stackoverflow.com/questions/36310296/looping-through-images-array-and-sh
 .ui.animated.button {
     background-color: #000000;
     opacity: 100%;
-    color: darkviolet;
+    color: lime;
 }
 .ui.massive.button {
     padding: 50px;
+    font-family: 'Oswald', sans-serif;
     font-size: xx-large;
-    background-color: darkviolet;
+    background-color: #000000;
+    opacity: 85%;
+    color: lime;
 }
 /*ADDITIONAL PROJECT STYLES - SOME ARE FROM SAMPLE CODE PROVIDED BY INSTRUCTOR*/
+/*FONT STYLES AND COLORS*/
 * {
     /*font-family: 'Open Sans', sans-serif;*/
     font-family: 'Muli', sans-serif;
+}
+p {
+    color: #ffffff;
+}
+p.dark {
+    color: #000000;
 }
 .title_font {
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
     color: #ffffff;
 }
-p {
-    color: #ffffff;
-}
-/*COLOR THAT IS THE FOUNDATION OF THE WEBSITE - NEEDED IN CASE THE IMAGE DOES NOT FULLY COVER CONTENT OF THE PAGE*/
+
+/*BACKGROUND COLORS AND IMAGES*/
 body {
     background-color: #000000;
 }
-
-/*SECOND LAYER OF BACKGROUND*/
 .image_background {
-    background: url("Images/DnD_DMG_Art.jpg") !important;;
-    background-size: cover !important;
+    background: url("Images/DnD_Starter_Art.jpg") !important; /*no-repeat center center fixed;*/
+    background-size: cover !important;;
     height: 100%;
 }
-.image-background2 {
-    background: url("Images/DnD_DMG_Art.jpg") no-repeat center center fixed;
-    background-size: cover;
-    height: 100%;
-}
-/*THIRD LAYER OF COLOR TO MAKE TEXT SHOW UP BETTER*/
 .text_background {
     background-color: #000000;
     opacity: 75%;
 }
+.dice_roller {
+    background-color: lightgrey;
+    opacity: 75%;
+    width: auto;
+    height: 100%;
+    color: black;
+    /*border: 2px solid red;*/
+}
+/*SPACING, MARGINS, PADDING, ALIGNMENT*/
+.left_margin {
+    margin-left: 50px;
+}
+.right_margin {
+    margin-right: 50px;
+}
 .center_vertically {
-    height: 200px;
+    height: 500px;
     position: relative;
-    border: 3px solid green;
+    /*border: 3px solid green;*/
 }
 .center_button {
     margin: 0;
@@ -77,15 +93,11 @@ body {
     transform: translate(-50%, -50%);
 }
 .footer_styles {
+    /*THESE COMMENTED OUT STYLES WILL PUT THE FOOTER INSIDE THE IMAGE TO THE BOTTOM OF THE IMAGE
     position: absolute;
     bottom: 0px;
-    left: 0;
+    left: 0;*/
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.left_margin {
-    margin-left: 50px;
-}
-.right_margin {
-    margin-right: 50px;
-}
+
