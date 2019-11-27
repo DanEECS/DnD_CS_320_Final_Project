@@ -23,15 +23,16 @@ https://stackoverflow.com/questions/36310296/looping-through-images-array-and-sh
 .ui.animated.button {
     background-color: #000000;
     opacity: 100%;
-    color: lime;
+    color: #8ac04e;
+    /*color: lime;*/
 }
 .ui.massive.button {
-    padding: 50px;
-    font-family: 'Oswald', sans-serif;
-    font-size: xx-large;
-    background-color: #000000;
+    padding: 30px;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5rem;
+    background-color: #8ac04e; /*light green sampled from dragon image*/
     opacity: 85%;
-    color: lime;
+    color: black;
 }
 .ui.labeled.input {
     padding: 5px;
@@ -50,7 +51,13 @@ p.dark {
 }
 .title_font {
     font-family: 'Oswald', sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
+    color: #ffffff;
+}
+.subtitle_font {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
     color: #ffffff;
 }
 
@@ -72,8 +79,18 @@ body {
     opacity: 75%;
     width: auto;
     height: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
     color: black;
     /*border: 2px solid red;*/
+}
+.login_background {
+    background-color: #000000;
+    opacity: 75%;
+    width: auto;
+    height: 100%;
+    padding: 30px;
+    color: black;
 }
 /*SPACING, MARGINS, PADDING, ALIGNMENT*/
 .left_margin {
