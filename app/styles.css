@@ -14,6 +14,10 @@ https://stackoverflow.com/questions/36310296/looping-through-images-array-and-sh
     height: auto;
     /*border: 2px solid aqua;*/
 }
+.ui.transparent.placeholder.segment {
+    background-color: rgba(255, 255, 255, 0);
+    border-style: hidden;
+}
 .ui.menu {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -26,7 +30,7 @@ https://stackoverflow.com/questions/36310296/looping-through-images-array-and-sh
     color: #8ac04e;
     /*color: lime;*/
 }
-.ui.massive.button {
+.ui.massive.green.button {
     padding: 30px;
     font-family: 'Muli', sans-serif;
     font-size: 1.5rem;
@@ -34,8 +38,25 @@ https://stackoverflow.com/questions/36310296/looping-through-images-array-and-sh
     opacity: 85%;
     color: black;
 }
+.ui.massive.coral.button {
+    padding: 30px;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5rem;
+    background-color: #B44F31; /*MATCHED FROM LIGHT GREEN DRAGON IMAGE*/
+    opacity: 100%;
+    color: black;
+}
+.ui.large.yellow.submit.button {
+    background-color: #FFC63A; /*PALE YELLOW #FFD15F; MATCHED FROM BLUE DUNGEON IMAGE*/
+    opacity: 100%;
+    color: black;
+}
 .ui.labeled.input {
     padding: 5px;
+}
+label {
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
 }
 /*ADDITIONAL PROJECT STYLES - SOME ARE FROM SAMPLE CODE PROVIDED BY INSTRUCTOR*/
 /*FONT STYLES AND COLORS*/
@@ -47,6 +68,9 @@ p {
     color: #ffffff;
 }
 p.dark {
+    color: #000000;
+}
+a.dark {
     color: #000000;
 }
 .title_font {
@@ -65,8 +89,13 @@ p.dark {
 body {
     background-color: #000000;
 }
-.image_background {
+.image_background1 {
     background: url("Images/DnD_Starter_Art.jpg") !important; /*no-repeat center center fixed;*/
+    background-size: cover !important;;
+    height: 100%;
+}
+.image_background2 {
+    background: url("Images/illo3.jpg") !important; /*no-repeat center center fixed;*/
     background-size: cover !important;;
     height: 100%;
 }
@@ -85,8 +114,16 @@ body {
     /*border: 2px solid red;*/
 }
 .login_background {
-    background-color: #000000;
+    /*background-color: lime;*/
     opacity: 75%;
+    width: auto;
+    height: 100%;
+    padding: 30px;
+    color: black;
+}
+.transparent_background {
+    /*background-color: lime;*/
+    opacity: 0%;
     width: auto;
     height: 100%;
     padding: 30px;

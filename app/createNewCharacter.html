@@ -21,7 +21,7 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="image_background1">
+    <div class="image_background2">
         <!--TOP NAVBAR-->
         <div class="ui container">
             <div class="text_background">
@@ -63,13 +63,71 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
             <div class="ui grid" >
                 <div class="three column row">
                     <div class="two wide column"></div>
-                    <div class="ten wide column">
-                        <div class="center_vertically">
-                            <div class="center_button">
-                                <div class="ui massive green circular button"><a class="dark" href="createNewCharacter.html">Create a character</a></div>
+                    <div class="eight wide column">
+
+                        <div class="ui form"><p class="subtitle_font dark">Create a new character:</p>
+                            <div class="field">
+                                <label>Race</label>
+                                    <div class="ui inline dropdown">
+                                    <input type="hidden" name="gender">
+                                    <div class="text">Shiba Inu</div>
+                                        <i class="dropdown icon"></i>
+                                        <div class="menu">
+                                            <div class="item">
+                                            <i class="dropdown icon"></i>
+                                            <span class="text">Dogs</span>
+                                                <div class="menu">
+                                                    <div class="item">Shiba Inu</div>
+                                                    <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Poodle</span>
+                                                        <div class="menu">
+                                                            <div class="item">Toy</div>
+                                                            <div class="item">Standard</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">Labrador</div>
+                                                </div>
+                                            </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Cats</span>
+                                                        <div class="menu">
+                                                            <div class="item">Aegean</div>
+                                                            <div class="item">Balinese</div>
+                                                            <div class="item">Persian</div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="field">
+                                <label>Sex</label>
+                                    <div class="ui selection dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="default text">Gender</div>
+                                        <div class="menu">
+                                            <div class="item" data-value="1">Male</div>
+                                            <div class="item" data-value="0">Female</div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="field">
+                                <label>First name</label>
+                                <input type="text" placeholder="First Name">
+                            </div>
+                            <div class="field">
+                                <label>Clan/Family/Surname</label>
+                                <input type="text" placeholder="Clan, Family, or Surname">
+                            </div>
+                            <div class="field">
+                                <div class="ui violet large submit button">Choose a name for me</div>
+                                <div class="ui large yellow submit button">Next</div>
                             </div>
                         </div>
+
                     </div>
+                    <div class="two wide column"></div>
                     <div class="four wide column">
                         <div class="ui center aligned grid">
                             <div class="column">
