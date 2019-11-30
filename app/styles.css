@@ -58,6 +58,7 @@ label {
     font-family: 'Muli', sans-serif;
     font-weight: bold;
 }
+
 /*ADDITIONAL PROJECT STYLES - SOME ARE FROM SAMPLE CODE PROVIDED BY INSTRUCTOR*/
 /*FONT STYLES AND COLORS*/
 * {
@@ -65,13 +66,16 @@ label {
     font-family: 'Muli', sans-serif;
 }
 p {
-    color: #ffffff;
+    color: #FFFFFF;
 }
 p.dark {
     color: #000000;
 }
 a.dark {
     color: #000000;
+}
+a.light {
+    color: #FFFFFF;
 }
 .title_font {
     font-family: 'Oswald', sans-serif;
