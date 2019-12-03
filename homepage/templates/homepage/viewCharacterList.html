@@ -1,0 +1,146 @@
+<!--/*
+Team DMRT:  Daniel Garrett, Matthew Fritz, Ruth Woodcock, Trevor McLam
+CS 320 Software Engineering, Fall 2019
+Final Project: DnD Character Management System, December 13, 2019
+
+SEE CSS FILE FOR OUTSIDE RESOURCES-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DnD Character Creator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="image_background">
+        <!--TOP NAVBAR-->
+        <div class="ui container">
+            <div class="text_background">
+                <div class="ui menu">
+                    <div class="left_margin">
+                        <h1 class="title_font">Dungeons and Dragons Character Creator</h1>
+                    </div>
+                    <div class="right menu">
+                        <div class="large ui buttons">
+                            <div class="ui animated button" tabindex="0">
+                                <div class="visible content"><i class="home icon"></i></div>
+                                <div class="hidden content"><a href="index.html">Home</a></div>
+                            </div>
+                            <div class="ui animated fade button" tabindex="0">
+                                <div class="visible content"><i class="user icon"></i></div>
+                                <div class="hidden content"><a href="login.html">Login</a></div>
+                            </div>
+                            <div class="ui vertical animated button" tabindex="0">
+                                <div class="visible content"><i class="question icon"></i></div>
+                                <div class="hidden content"><a href="help.html">Help</a></div>
+                            </div>
+                            <div class="ui vertical animated button" tabindex="0">
+                                <div class="visible content"><i class="info icon"></i></div>
+                                <div class="hidden content"><a href="about.html">About</a></div>
+                            </div>
+                            <div class="right_margin">
+                                <div class="ui vertical animated button" tabindex="0">
+                                    <div class="visible content">Wizards of the Coast</div>
+                                    <div class="hidden content"><a href="https://dnd.wizards.com/">Official DnD site</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--MIDDLE SECTION-->
+        <div class="ui container">
+            <div class="ui grid" >
+                <div class="three column row">
+                    <div class="two wide column"></div>
+                    <div class="ten wide column">
+                        <div class="center_vertically">
+                            <div class="center_button">
+                                <div class="ui massive green circular button">Create a character</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="four wide column">
+                        <div class="ui center aligned grid">
+                            <div class="column">
+                                <div class="dice_roller">
+                                    <p class="subtitle_font dark">Dice Roller</p>
+                                    <div class="ui centered labeled input">
+                                        <input style="width: 125px;" type="text" placeholder="number of dice">
+                                        <div class="ui label">d</div>
+                                        <div class="ui dropdown label">
+                                            <div class="text"># sides</div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item">2</div>
+                                                <div class="item">4</div>
+                                                <div class="item">6</div>
+                                                <div class="item">8</div>
+                                                <div class="item">10</div>
+                                                <div class="item">12</div>
+                                                <div class="item">20</div>
+                                                <div class="item">100</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="subtitle_font dark">Results:</p>
+                                        <div class="ui relaxed middle aligned celled list">
+                                            <div class="centered item">{{ diceResults|linebreaks }}</div>
+                                            <div class="item">{{ diceResults|linebreaks }}</div>
+                                            <div class="item">{{ diceResults|linebreaks }}</div>
+                                        </div>
+                                        <!--CREATES A BULLETED LIST - IS THIS WHAT WE WANT?
+                                        <ul>
+                                            {% for roll in varDiceRoll %}
+                                            <li>
+                                                {{ diceResults|linebreaks }}
+                                            </li>
+                                        </ul>
+                                        -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER SECTION-->
+    <div class="ui container">
+        <div class="text_background footer_styles">
+            <div class="left_margin right_margin">
+                <div class="ui center aligned grid">
+                    <div class="sixteen wide column">
+                        <p>COPYRIGHT &copy 2019 Team DMRT (Daniel Garrett, Matthew Fritz, Ruth Woodcock, Trevor McLam)<br><br>
+                            Wizards of the Coast, Dungeons & Dragons, and their logos are trademarks of Wizards of the Coast
+                            LLC in the United States and other countries. © 2015 Wizards. All Rights Reserved.<br><br>
+                            This Web site is not affiliated with, endorsed, sponsored, or specifically approved by Wizards of
+                            the Coast LLC. This Web site may use the trademarks and other intellectual property of Wizards of
+                            the Coast LLC, which is permitted under <a href="https://dnd.wizards.com/articles/features/fan-site-kit">
+                                Wizards' Fan Site Policy</a>. For example, Dungeons & Dragons® is a trademark[s] of Wizards of
+                            the Coast. For more information about Wizards of the Coast or any of Wizards' trademarks or other
+                            intellectual property, please visit their website at (<a href="https://company.wizards.com/">
+                                www.wizards.com</a>).<br><br>
+
+                            Team DMRT has made every effort to honor the Fan Site Policy as described in the Wizards
+                            Fan Site Policy listed above.  If there are any questions, please contact Ruth Woodcock at
+                            <a href="mailto:ruth.woodcock.wsu.edu">ruth.woodcock.wsu.edu</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
