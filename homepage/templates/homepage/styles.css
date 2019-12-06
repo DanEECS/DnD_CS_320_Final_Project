@@ -58,7 +58,10 @@ label {
     font-family: 'Muli', sans-serif;
     font-weight: bold;
 }
+label.bigger {
 
+    padding: 10px;
+}
 /*ADDITIONAL PROJECT STYLES - SOME ARE FROM SAMPLE CODE PROVIDED BY INSTRUCTOR*/
 /*FONT STYLES AND COLORS*/
 * {
@@ -70,6 +73,9 @@ p {
 }
 p.dark {
     color: #000000;
+}
+p.bigger_font {
+    font-size: 1.25rem;
 }
 a.dark {
     color: #000000;

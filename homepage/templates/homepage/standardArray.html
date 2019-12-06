@@ -75,62 +75,83 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                             </div>
                                 <div class="label">Progress on your character</div>
                         </div>
-                        <div class="ui form"><p class="subtitle_font dark">Character: (Name of character)</p>
-                            <div class="field">
-                                <label>Class and specialization</label>
-                                <div class="ui inline dropdown">
-                                <input type="hidden" name="classSpec">
-                                <div class="text">Choose a class and specialization</div>
-                                    <i class="dropdown icon"></i>
-                                    <div class="menu">
-                                        <div class="item">
-                                            <span class="text">testing reset</span>
-                                        </div>
-                                        <div class="item"><i class="icon-dnd5e_classsymb_barbarian"></i>Barbarian</div>
-                                        <div class="item">Bard</div>
-                                        <div class="item">
-                                        <i class="dropdown icon"></i>
-                                        <span class="text">Cleric</span>
+                        <p class="subtitle_font dark">Character: (Name of character)</p>
+                        <label>Roll the dice and enter the values in the appropriate boxes:</label>
+                        <div class="ui form">
+                            <div class="fields">
+                                <div class="field">
+                                    <div class="ui lightgrey massive submit button"><a class="dark" href="standardArray.html">Standard Array</a></div>
+                                    <div class="inline field"><label><p class="dark bigger_font">Strength</p></label>
+                                        <div class="ui inline dropdown">
+                                            <div class="text"></div>
+                                            <i class="dropdown icon"></i>
                                             <div class="menu">
-                                                <div class="item">Cleric: Knowledge Domain</div>
-                                                <div class="item">Cleric: Life Domain</div>
-                                                <div class="item">Cleric: Light Domain</div>
-                                                <div class="item">Cleric: Nature Domain</div>
-                                                <div class="item">Cleric: Tempest Domain</div>
-                                                <div class="item">Cleric: Trickery Domain</div>
-                                                <div class="item">Cleric: War Domain</div>
+                                                <div class="item" data-value="1">2</div>
+                                                <div class="item" data-value="0">4</div>
                                             </div>
                                         </div>
-                                        <div class="item">Druid</div>
-                                        <div class="item">Fighter</div>
-                                        <div class="item">Monk</div>
-                                        <div class="item">Paladin</div>
-                                        <div class="item"><i class="icon-dnd5e_classsymb_ranger"></i>Ranger</div>
-                                        <div class="item">Rogue</div>
-                                        <div class="item">
-                                        <i class="dropdown icon"></i>
-                                        <span class="text">Sorcerer</span>
-                                            <div class="menu">
-                                                <div class="item">Sorcerer: Draconic Bloodline</div>
-                                                <div class="item">Sorcerer: Wild Magic</div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                        <i class="dropdown icon"></i>
-                                        <span class="text">Warlock</span>
-                                            <div class="menu">
-                                                <div class="item">Warlock patron: the Archfey</div>
-                                                <div class="item">Warlock patron: the Fiend</div>
-                                                <div class="item">Warlock patron: the Great Old One</div>
-                                            </div>
-                                        </div>
-                                        <div class="item">Wizard</div>
                                     </div>
+                                    <div class="inline field"><label><p class="dark bigger_font">Dexterity</p></label>
+                                        <div class="ui inline dropdown">
+                                            <div class="text"></div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item" data-value="1">2</div>
+                                                <div class="item" data-value="0">4</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline field"><label><p class="dark bigger_font">Constitution</p></label>
+                                        <div class="ui inline dropdown">
+                                            <div class="text"></div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item" data-value="1">2</div>
+                                                <div class="item" data-value="0">4</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline field"><label><p class="dark bigger_font">Intelligence</p></label>
+                                        <div class="ui inline dropdown">
+                                            <div class="text"></div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item" data-value="1">2</div>
+                                                <div class="item" data-value="0">4</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline field"><label><p class="dark bigger_font">Wisdom</p></label>
+                                        <div class="ui inline dropdown">
+                                            <div class="text"></div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item" data-value="1">2</div>
+                                                <div class="item" data-value="0">4</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline field"><label><p class="dark bigger_font">Charisma</p></label>
+                                        <div class="ui inline dropdown">
+                                            <div class="text"></div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item" data-value="1">2</div>
+                                                <div class="item" data-value="0">4</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui lightgrey large submit button"><a class="dark" href="manual.html">Manual</a></div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui lightgrey large submit button"><a class="dark" href="pointBuy.html">Point Buy</a></div>
                                 </div>
                             </div>
                             <div class="field">
-                                <div class="ui violet large submit button"><a class="light" href="createNewCharacter.html">Back</a></div>
-                                <div class="ui large yellow submit button"><a class="dark" href="addAttributes.html">Next</a></div>
+                                <div class="ui violet large submit button"><a class="light" href="classAndSpecialization.html">Back</a></div>
+                                <div class="ui large yellow submit button"><a class="dark" href="classAndSpecialization.html">Next</a></div>
                             </div>
                         </div>
 

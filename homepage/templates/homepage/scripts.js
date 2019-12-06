@@ -9,6 +9,9 @@ $('.category.example .ui.dropdown')
     allowCategorySelection: true
   })
 ;
+$('.ui.radio.checkbox')
+  .checkbox()
+;
 $('#progressBar')
   .progress({percent:20})
 ;
