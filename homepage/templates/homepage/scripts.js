@@ -9,6 +9,9 @@ $('.category.example .ui.dropdown')
     allowCategorySelection: true
   })
 ;
+$('.ui.checkbox')
+  .checkbox()
+;
 $('.ui.radio.checkbox')
   .checkbox()
 ;

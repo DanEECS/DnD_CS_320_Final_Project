@@ -15,6 +15,7 @@ https://stackoverflow.com/questions/36310296/looping-through-images-array-and-sh
     /*border: 2px solid aqua;*/
 }
 .ui.transparent.placeholder.segment {
+    width: 100%;
     background-color: rgba(255, 255, 255, 0);
     border-style: hidden;
 }
@@ -38,6 +39,15 @@ https://stackoverflow.com/questions/36310296/looping-through-images-array-and-sh
     opacity: 85%;
     color: black;
 }
+.ui.massive.black.button {
+    width: 500px;
+    padding: 30px;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5rem;
+    background-color: black; /*MATCHED FROM XXXX IMAGE*/
+    opacity: 100%;
+    color: white;
+}
 .ui.massive.coral.button {
     padding: 30px;
     font-family: 'Muli', sans-serif;
@@ -51,6 +61,11 @@ https://stackoverflow.com/questions/36310296/looping-through-images-array-and-sh
     opacity: 100%;
     color: black;
 }
+.ui.message {
+    background-color: #FFC63A; /*PALE YELLOW #FFD15F; MATCHED FROM BLUE DUNGEON IMAGE*/
+    opacity: 70%;
+    color: black;
+}
 .ui.labeled.input {
     padding: 5px;
 }
@@ -59,7 +74,6 @@ label {
     font-weight: bold;
 }
 label.bigger {
-
     padding: 10px;
 }
 /*ADDITIONAL PROJECT STYLES - SOME ARE FROM SAMPLE CODE PROVIDED BY INSTRUCTOR*/
@@ -109,6 +123,16 @@ body {
     background-size: cover !important;;
     height: 100%;
 }
+.image_background3 {
+    background: url("Images/DnD_MM_Art.jpg") !important; /*no-repeat center center fixed;*/
+    background-size: cover !important;;
+    height: 100%;
+}
+.image_background4 {
+    background: url("Images/DnD_PHB_Art.jpg") !important; /*no-repeat center center fixed;*/
+    background-size: cover !important;;
+    height: 100%;
+}
 .text_background {
     background-color: #000000;
     opacity: 75%;
@@ -125,7 +149,7 @@ body {
 }
 .login_background {
     /*background-color: lime;*/
-    opacity: 75%;
+    opacity: 70%;
     width: auto;
     height: 100%;
     padding: 30px;
