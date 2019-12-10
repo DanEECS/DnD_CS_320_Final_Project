@@ -1,0 +1,87 @@
+{% extends "homepage/base.html" %}
+{% block content %}
+    <div class="image_background3">
+        <!--TOP NAVBAR-->
+        <div class="ui container">
+            <div class="text_background">
+                <div class="ui menu">
+                    <div class="left_margin">
+                        <h1 class="title_font">Dungeons and Dragons Character Creator: Create Account</h1>
+                    </div>
+                    <div class="right menu">
+                        <div class="large ui buttons">
+                            <div class="ui animated button" tabindex="0">
+                                <div class="visible content"><i class="home icon"></i></div>
+                                <div class="hidden content"><a href="{% url 'index' %}">Home</a></div>
+                            </div>
+                            <div class="ui animated fade button" tabindex="0">
+                                <div class="visible content"><i class="user icon"></i></div>
+                                <div class="hidden content"><a href="login/">Login</a></div>
+                            </div>
+                            <div class="ui vertical animated button" tabindex="0">
+                                <div class="visible content"><i class="question icon"></i></div>
+                                <div class="hidden content"><a href="{% url 'help' %}">Help</a></div>
+                            </div>
+                            <div class="ui vertical animated button" tabindex="0">
+                                <div class="visible content"><i class="info icon"></i></div>
+                                <div class="hidden content"><a href="{% url 'about' %}">About</a></div>
+                            </div>
+                            <div class="right_margin">
+                                <div class="ui vertical animated button" tabindex="0">
+                                    <div class="visible content">Wizards of the Coast</div>
+                                    <div class="hidden content"><a href="https://dnd.wizards.com/" target="_blank">Official DnD site</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--MIDDLE SECTION-->
+        <div class="ui container">
+            <!--SEMANTIC UI VERTICAL DIVIDER ONLY SUPPORTED FOR 50/50 SPLIT AT THIS TIME-->
+            <div class="login_background">
+                <div class="ui placeholder segment">
+                    <div class="ui two column very relaxed stackable grid">
+                        <div class="middle aligned column">
+                            <div class="ui form">
+                                <div class="field">
+                                    <label>Create an Account</label>
+                                    <div class="ui left icon input">
+                                        <input type="text" placeholder="Username">
+                                        <i class="user icon"></i>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label>Password</label>
+                                        <div class="ui left icon input">
+                                            <input type="password">
+                                            <i class="lock icon"></i>
+                                        </div>
+                                </div>
+                                <div class="field">
+                                    <label>Verify Password</label>
+                                        <div class="ui left icon input">
+                                            <input type="password">
+                                            <i class="lock icon"></i>
+                                        </div>
+                                </div>
+                                <div class="ui green submit button">Sign up</div>
+                                <div class="hidden content"><a href="viewCharacterList.html"></a></div>
+                            </div>
+                        </div>
+                        <div class="middle aligned column">
+                            <div class="ui transparent placeholder segment">
+                                <div class="center_button">
+                                    <div class="ui massive black circular button">Proceed as Guest</div>
+                                    <div class="hidden content"><a href="createNewCharacter.html"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui vertical divider">Or</div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,6 +1,6 @@
 {% extends "homepage/base.html" %}
 {% block content %}
-    <div class="image_background2">
+<div class="image_background2">
         <!--TOP NAVBAR-->
         <div class="ui container">
             <div class="text_background">
@@ -12,19 +12,19 @@
                         <div class="large ui buttons">
                             <div class="ui animated button" tabindex="0">
                                 <div class="visible content"><i class="home icon"></i></div>
-                                <div class="hidden content"><a href="index.html">Home</a></div>
+                                <div class="hidden content"><a href="{% url 'index' %}">Home</a></div>
                             </div>
                             <div class="ui animated fade button" tabindex="0">
                                 <div class="visible content"><i class="user icon"></i></div>
-                                <div class="hidden content"><a href="login.html">Login</a></div>
+                                <div class="hidden content"><a href="login/">Login</a></div>
                             </div>
                             <div class="ui vertical animated button" tabindex="0">
                                 <div class="visible content"><i class="question icon"></i></div>
-                                <div class="hidden content"><a href="help.html">Help</a></div>
+                                <div class="hidden content"><a href="{% url 'help' %}">Help</a></div>
                             </div>
                             <div class="ui vertical animated button" tabindex="0">
                                 <div class="visible content"><i class="info icon"></i></div>
-                                <div class="hidden content"><a href="about.html">About</a></div>
+                                <div class="hidden content"><a href="{% url 'about' %}">About</a></div>
                             </div>
                             <div class="right_margin">
                                 <div class="ui vertical animated button" tabindex="0">
@@ -51,78 +51,103 @@
                             </div>
                                 <div class="label">Progress on your character</div>
                         </div>
-                        <p class="subtitle_font dark">Character: (Name of character)</p>
-                        <label>Roll the dice and enter the values in the appropriate boxes:</label>
+                        <p class="subtitle_font dark">Character: (Name of character) - Character Description<br></p>
+                        <p class="dark">Select one characteristic from each drop down menu.</p>
                         <div class="ui form">
                             <div class="fields">
                                 <div class="field">
-                                    <div class="ui lightgrey massive submit button"><a class="dark" href="standardArray.html">Standard Array</a></div>
-                                    <div class="inline field"><label><p class="dark bigger_font">Strength</p></label>
+                                    <div class="inline field"><label><p class="dark bigger_font">Alignment</p></label>
                                         <div class="ui inline dropdown">
                                             <div class="text"></div>
                                             <i class="dropdown icon"></i>
                                             <div class="menu">
-                                                <div class="item" data-value="1">2</div>
-                                                <div class="item" data-value="0">4</div>
+                                                <div class="item" data-value="1">Lawful Good</div>
+                                                <div class="item" data-value="0">Neutral Good</div>
+                                                <div class="item" data-value="1">Chaotic Good</div>
+                                                <div class="item" data-value="0">Lawful Neutral</div>
+                                                <div class="item" data-value="1">Neutral</div>
+                                                <div class="item" data-value="0">Neutral Chaotic</div>
+                                                <div class="item" data-value="1">Lawful Evil</div>
+                                                <div class="item" data-value="0">Neutral Evil</div>
+                                                <div class="item" data-value="0">Chaotic Evil</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="inline field"><label><p class="dark bigger_font">Dexterity</p></label>
+                                    <div class="inline field"><label><p class="dark bigger_font">Background</p></label>
                                         <div class="ui inline dropdown">
                                             <div class="text"></div>
                                             <i class="dropdown icon"></i>
                                             <div class="menu">
-                                                <div class="item" data-value="1">2</div>
-                                                <div class="item" data-value="0">4</div>
+                                                <div class="item" data-value="1">Acolyte</div>
+                                                <div class="item" data-value="0">Charlatan</div>
+                                                <div class="item" data-value="1">Criminal</div>
+                                                <div class="item" data-value="0">Entertainer</div>
+                                                <div class="item" data-value="1">Folk Hero</div>
+                                                <div class="item" data-value="0">Guild Artisan</div>
+                                                <div class="item" data-value="1">Hermit</div>
+                                                <div class="item" data-value="0">Noble</div>
+                                                <div class="item" data-value="0">Outlander</div>
+                                                <div class="item" data-value="0">Sage</div>
+                                                <div class="item" data-value="1">Sailor</div>
+                                                <div class="item" data-value="0">Soldier</div>
+                                                <div class="item" data-value="0">Urchin</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="inline field"><label><p class="dark bigger_font">Constitution</p></label>
+                                    <div class="inline field"><label><p class="dark bigger_font">Ideals</p></label>
+                                        <div class="ui inline dropdown">
+                                            <div class="text">Acolyte</div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item" data-value="1">Acolyte: Tradition: The ancient
+                                                    traditions of worship and sacrifice must be upheld. (Lawful)</div>
+                                                <div class="item" data-value="0">Acolyte: Charity: I always try to help
+                                                    those in need, no matter what the cost. (Good)</div>
+                                                <div class="item" data-value="1">Acolyte: Change: We must bring about
+                                                    the changes the gods are constantly working in the world. (Chaotic)</div>
+                                                <div class="item" data-value="0">Acolyte: Power: I hope to one day rise
+                                                    to the top of my faith's religious hierarchy. (Lawful)</div>
+                                                <div class="item" data-value="1">Acolyte: Faith: I trust that my deity
+                                                    will guide my actions. I have faith that if I work hard, things will
+                                                    go well. (Lawful)</div>
+                                                <div class="item" data-value="0">Acolyte: Aspiration
+                                                    <div class="ui message">
+                                                        <p class="dark">Acolyte: I seek to prove myself worthy of my god's
+                                                            favor by matching my actions against his or her teachings. (Any)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline field"><label><p class="dark bigger_font">Bonds</p></label>
                                         <div class="ui inline dropdown">
                                             <div class="text"></div>
                                             <i class="dropdown icon"></i>
                                             <div class="menu">
-                                                <div class="item" data-value="1">2</div>
+                                                <div class="item" data-value="1"><p class="dark">I would die to recover an ancient relic
+                                                of my faith that was lost long ago.</p></div>
                                                 <div class="item" data-value="0">4</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="inline field"><label><p class="dark bigger_font">Intelligence</p></label>
-                                        <div class="ui inline dropdown">
-                                            <div class="text"></div>
-                                            <i class="dropdown icon"></i>
-                                            <div class="menu">
-                                                <div class="item" data-value="1">2</div>
-                                                <div class="item" data-value="0">4</div>
+                                    <div class="inline field"><label><p class="dark bigger_font">Skills<br></p>
+                                        <p class="dark">Select 2 skills from the choices below.  Honor system applies here.  This is
+                                        between you and your DM.</p></label>
+                                        <div class="ui form">
+                                            <div class="inline field">
+                                                <div class="ui checkbox">
+                                                    <input type="checkbox">
+                                                    <label>Checkbox</label>
+                                                </div>
+                                            </div>
+                                            <div class="inline field">
+                                                <div class="ui toggle checkbox">
+                                                    <input type="checkbox">
+                                                    <label>Toggle</label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="inline field"><label><p class="dark bigger_font">Wisdom</p></label>
-                                        <div class="ui inline dropdown">
-                                            <div class="text"></div>
-                                            <i class="dropdown icon"></i>
-                                            <div class="menu">
-                                                <div class="item" data-value="1">2</div>
-                                                <div class="item" data-value="0">4</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="inline field"><label><p class="dark bigger_font">Charisma</p></label>
-                                        <div class="ui inline dropdown">
-                                            <div class="text"></div>
-                                            <i class="dropdown icon"></i>
-                                            <div class="menu">
-                                                <div class="item" data-value="1">2</div>
-                                                <div class="item" data-value="0">4</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <div class="ui lightgrey large submit button"><a class="dark" href="manual.html">Manual</a></div>
-                                </div>
-                                <div class="field">
-                                    <div class="ui lightgrey large submit button"><a class="dark" href="pointBuy.html">Point Buy</a></div>
                                 </div>
                             </div>
                             <div class="field">
