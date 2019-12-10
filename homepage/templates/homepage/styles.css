@@ -19,6 +19,15 @@ https://stackoverflow.com/questions/36310296/looping-through-images-array-and-sh
     background-color: rgba(255, 255, 255, 0);
     border-style: hidden;
 }
+.ui.form.light {
+    height: auto;
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    background-color: #FFFFFF;
+    opacity: 75%;
+}
 .ui.menu {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -28,11 +37,10 @@ https://stackoverflow.com/questions/36310296/looping-through-images-array-and-sh
 .ui.animated.button {
     background-color: #000000;
     opacity: 100%;
-    color: #8ac04e;
-    /*color: lime;*/
+    color: limegreen; /*NAV BAR ICONS: WITH BLACK TRANSPARENT BACKGROUND MATCHES GREEN SUBMIT BUTTON*/
 }
 .ui.massive.green.button {
-    padding: 30px;
+    padding: 50px;
     font-family: 'Muli', sans-serif;
     font-size: 1.5rem;
     background-color: #8ac04e; /*light green sampled from dragon image*/
@@ -44,7 +52,7 @@ https://stackoverflow.com/questions/36310296/looping-through-images-array-and-sh
     padding: 30px;
     font-family: 'Muli', sans-serif;
     font-size: 1.5rem;
-    background-color: black; /*MATCHED FROM XXXX IMAGE*/
+    background-color: black;
     opacity: 100%;
     color: white;
 }
@@ -102,11 +110,22 @@ a.light {
     font-size: 2rem;
     color: #ffffff;
 }
-.subtitle_font {
+.title_font_dark {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: #000000;
+}
+.subtitle_font_light {
     font-family: 'Oswald', sans-serif;
     font-size: 1.5rem;
     margin-bottom: 0px;
     color: #ffffff;
+}
+.subtitle_font_dark {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    color: #000000;
 }
 
 /*BACKGROUND COLORS AND IMAGES*/
@@ -119,7 +138,7 @@ body {
     height: 100%;
 }
 .image_background2 {
-    background: url("Images/illo3.jpg") !important; /*no-repeat center center fixed;*/
+    background: url("Images/DnD_DMG_Art.jpg") !important; /*no-repeat center center fixed;*/
     background-size: cover !important;;
     height: 100%;
 }
@@ -133,6 +152,28 @@ body {
     background-size: cover !important;;
     height: 100%;
 }
+/*THIS SET OF IMAGES NOT USED BECAUSE THEY DO NOT RENDER AS WELL - NOT AS SHARP
+.image_background5 {
+    background: url("Images/illo1.jpg") !important;
+    background-size: cover !important;;
+    height: 100%;
+}
+.image_background6 {
+    background: url("Images/illo2.jpg") !important;
+    background-size: cover !important;;
+    height: 100%;
+}
+.image_background7 {
+    background: url("Images/illo3.jpg") !important;
+    background-size: cover !important;;
+    height: 100%;
+}
+.image_background8 {
+    background: url("Images/illo4.jpg") !important;
+    background-size: cover !important;;
+    height: 100%;
+}
+*/
 .text_background {
     background-color: #000000;
     opacity: 75%;

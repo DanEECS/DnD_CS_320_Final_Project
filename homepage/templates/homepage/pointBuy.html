@@ -8,7 +8,7 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DnD Character Creator/charDescription</title>
+    <title>DnD Character Creator/stdArray</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript"
@@ -24,7 +24,7 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
     <link rel="stylesheet" href="Images/fontello-2711df08/fontello-2711df08/css/dnd_icons-embedded.css">
 </head>
 <body>
-    <div class="image_background2">
+    <div class="image_background4">
         <!--TOP NAVBAR-->
         <div class="ui container">
             <div class="text_background">
@@ -67,126 +67,113 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                 <div class="three column row">
                     <div class="two wide column"></div>
                     <div class="eight wide column">
-                        <!--TO KEEP USER'S SELECTIONS ON REFRESH/PAGE NAV, USE "ITEM" -
-                        "SPAN CLASS TEXT" WILL CLEAR SELECTIONS-->
+                        <!--PROGRESS BAR NOT USED AS THESE PAGES WILL BE USED FOR EDITING CHARACTERS
                         <div class="ui indicating active progress" data-percent="" id="progressBar">
                             <div class="bar">
                                 <div class="progress"></div>
                             </div>
                                 <div class="label">Progress on your character</div>
                         </div>
-                        <p class="subtitle_font dark">Character: (Name of character) - Character Description<br></p>
-                        <p class="dark">Select one characteristic from each drop down menu.</p>
-                        <div class="ui form">
+                        -->
+                        <div class="ui form light"><p class="title_font_dark">Create/Edit Character - step 3</p>
+                            <p class="subtitle_font_dark">Character: (Name of character)</p>
+                            <label>Choose values using arrows:</label>
                             <div class="fields">
-                                <div class="field">
-                                    <div class="inline field"><label><p class="dark bigger_font">Alignment</p></label>
+                                <div class="inline field"><label><p class="dark bigger_font">Strength</p></label>
+                                    <div class="ui buttons">
+                                        <button class="ui labeled icon button">
+                                            <i class="left chevron icon"></i>
+                                        </button>
+                                        <button class="ui button">Starting Value</button>
+                                        <button class="ui right labeled icon button">
+                                            <i class="right chevron icon"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                    <div class="inline field"><label><p class="dark bigger_font">Dexterity</p></label>
                                         <div class="ui inline dropdown">
                                             <div class="text"></div>
                                             <i class="dropdown icon"></i>
                                             <div class="menu">
-                                                <div class="item" data-value="1">Lawful Good</div>
-                                                <div class="item" data-value="0">Neutral Good</div>
-                                                <div class="item" data-value="1">Chaotic Good</div>
-                                                <div class="item" data-value="0">Lawful Neutral</div>
-                                                <div class="item" data-value="1">Neutral</div>
-                                                <div class="item" data-value="0">Neutral Chaotic</div>
-                                                <div class="item" data-value="1">Lawful Evil</div>
-                                                <div class="item" data-value="0">Neutral Evil</div>
-                                                <div class="item" data-value="0">Chaotic Evil</div>
+                                                <div class="item" data-value="1">15</div>
+                                                <div class="item" data-value="0">14</div>
+                                                <div class="item" data-value="1">13</div>
+                                                <div class="item" data-value="0">12</div>
+                                                <div class="item" data-value="1">10</div>
+                                                <div class="item" data-value="0">8</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="inline field"><label><p class="dark bigger_font">Background</p></label>
+                                    <div class="inline field"><label><p class="dark bigger_font">Constitution</p></label>
                                         <div class="ui inline dropdown">
                                             <div class="text"></div>
                                             <i class="dropdown icon"></i>
                                             <div class="menu">
-                                                <div class="item" data-value="1">Acolyte</div>
-                                                <div class="item" data-value="0">Charlatan</div>
-                                                <div class="item" data-value="1">Criminal</div>
-                                                <div class="item" data-value="0">Entertainer</div>
-                                                <div class="item" data-value="1">Folk Hero</div>
-                                                <div class="item" data-value="0">Guild Artisan</div>
-                                                <div class="item" data-value="1">Hermit</div>
-                                                <div class="item" data-value="0">Noble</div>
-                                                <div class="item" data-value="0">Outlander</div>
-                                                <div class="item" data-value="0">Sage</div>
-                                                <div class="item" data-value="1">Sailor</div>
-                                                <div class="item" data-value="0">Soldier</div>
-                                                <div class="item" data-value="0">Urchin</div>
+                                                <div class="item" data-value="1">15</div>
+                                                <div class="item" data-value="0">14</div>
+                                                <div class="item" data-value="1">13</div>
+                                                <div class="item" data-value="0">12</div>
+                                                <div class="item" data-value="1">10</div>
+                                                <div class="item" data-value="0">8</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="inline field"><label><p class="dark bigger_font">Ideals</p></label>
-                                        <div class="ui inline dropdown">
-                                            <div class="text">Acolyte</div>
-                                            <i class="dropdown icon"></i>
-                                            <div class="menu">
-                                                <div class="item" data-value="1">Acolyte: Tradition: The ancient
-                                                    traditions of worship and sacrifice must be upheld. (Lawful)</div>
-                                                <div class="item" data-value="0">Acolyte: Charity: I always try to help
-                                                    those in need, no matter what the cost. (Good)</div>
-                                                <div class="item" data-value="1">Acolyte: Change: We must bring about
-                                                    the changes the gods are constantly working in the world. (Chaotic)</div>
-                                                <div class="item" data-value="0">Acolyte: Power: I hope to one day rise
-                                                    to the top of my faith's religious hierarchy. (Lawful)</div>
-                                                <div class="item" data-value="1">Acolyte: Faith: I trust that my deity
-                                                    will guide my actions. I have faith that if I work hard, things will
-                                                    go well. (Lawful)</div>
-                                                <div class="item" data-value="0">Acolyte: Aspiration
-                                                    <div class="ui message">
-                                                        <p class="dark">Acolyte: I seek to prove myself worthy of my god's
-                                                            favor by matching my actions against his or her teachings. (Any)</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="inline field"><label><p class="dark bigger_font">Bonds</p></label>
+                                    <div class="inline field"><label><p class="dark bigger_font">Intelligence</p></label>
                                         <div class="ui inline dropdown">
                                             <div class="text"></div>
                                             <i class="dropdown icon"></i>
                                             <div class="menu">
-                                                <div class="item" data-value="1"><p class="dark">I would die to recover an ancient relic
-                                                of my faith that was lost long ago.</p></div>
-                                                <div class="item" data-value="0">4</div>
+                                                <div class="item" data-value="1">15</div>
+                                                <div class="item" data-value="0">14</div>
+                                                <div class="item" data-value="1">13</div>
+                                                <div class="item" data-value="0">12</div>
+                                                <div class="item" data-value="1">10</div>
+                                                <div class="item" data-value="0">8</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="inline field"><label><p class="dark bigger_font">Skills<br></p>
-                                        <p class="dark">Select 2 skills from the choices below.  Honor system applies here.  This is
-                                        between you and your DM.</p></label>
-                                        <div class="ui form">
-                                            <div class="inline field">
-                                                <div class="ui checkbox">
-                                                    <input type="checkbox">
-                                                    <label>Checkbox</label>
-                                                </div>
+                                    <div class="inline field"><label><p class="dark bigger_font">Wisdom</p></label>
+                                        <div class="ui inline dropdown">
+                                            <div class="text"></div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item" data-value="1">15</div>
+                                                <div class="item" data-value="0">14</div>
+                                                <div class="item" data-value="1">13</div>
+                                                <div class="item" data-value="0">12</div>
+                                                <div class="item" data-value="1">10</div>
+                                                <div class="item" data-value="0">8</div>
                                             </div>
-                                            <div class="inline field">
-                                                <div class="ui toggle checkbox">
-                                                    <input type="checkbox">
-                                                    <label>Toggle</label>
-                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline field"><label><p class="dark bigger_font">Charisma</p></label>
+                                        <div class="ui inline dropdown">
+                                            <div class="text"></div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item" data-value="1">15</div>
+                                                <div class="item" data-value="0">14</div>
+                                                <div class="item" data-value="1">13</div>
+                                                <div class="item" data-value="0">12</div>
+                                                <div class="item" data-value="1">10</div>
+                                                <div class="item" data-value="0">8</div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="field">
-                                <div class="ui violet large submit button"><a class="light" href="classAndSpecialization.html">Back</a></div>
-                                <div class="ui large yellow submit button"><a class="dark" href="classAndSpecialization.html">Next</a></div>
+                                <div class="ui violet large submit button"><a class="light" href="addAttributes.html">Back</a></div>
+                                <div class="ui large yellow submit button"><a class="dark" href="charDescription.html">Next</a></div>
                             </div>
                         </div>
-
                     </div>
                     <div class="two wide column"></div>
                     <div class="four wide column">
                         <div class="ui center aligned grid">
                             <div class="column">
                                 <div class="dice_roller">
-                                    <p class="subtitle_font dark">Dice Roller</p>
+                                    <p class="subtitle_font_dark">Dice Roller</p>
                                     <div class="ui centered labeled input">
                                         <input style="width: 125px;" type="text" placeholder="number of dice">
                                         <div class="ui label">d</div>
@@ -205,7 +192,7 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="subtitle_font dark">Results:</p>
+                                    <p class="subtitle_font_dark">Results:</p>
                                         <div class="ui relaxed middle aligned celled list">
                                             <div class="centered item">{{ diceResults|linebreaks }}</div>
                                             <div class="item">{{ diceResults|linebreaks }}</div>

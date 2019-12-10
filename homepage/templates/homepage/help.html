@@ -8,7 +8,7 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DnD Character Creator</title>
+    <title>DnD Character Creator/help</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript"
@@ -34,7 +34,7 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                     </div>
                     <div class="right menu">
                         <div class="large ui buttons">
-                            <div class="ui animated button" tabindex="0">
+                            <div class="ui animated fade button" tabindex="0">
                                 <div class="visible content"><i class="home icon"></i></div>
                                 <div class="hidden content"><a href="index.html">Home</a></div>
                             </div>
@@ -42,16 +42,16 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                                 <div class="visible content"><i class="user icon"></i></div>
                                 <div class="hidden content"><a href="login.html">Login</a></div>
                             </div>
-                            <div class="ui vertical animated button" tabindex="0">
+                            <div class="ui animated fade button" tabindex="0">
                                 <div class="visible content"><i class="question icon"></i></div>
                                 <div class="hidden content"><a href="help.html">Help</a></div>
                             </div>
-                            <div class="ui vertical animated button" tabindex="0">
+                            <div class="ui animated fade button" tabindex="0">
                                 <div class="visible content"><i class="info icon"></i></div>
                                 <div class="hidden content"><a href="about.html">About</a></div>
                             </div>
                             <div class="right_margin">
-                                <div class="ui vertical animated button" tabindex="0">
+                                <div class="ui animated fade button" tabindex="0">
                                     <div class="visible content">Wizards of the Coast</div>
                                     <div class="hidden content"><a href="https://dnd.wizards.com/" target="_blank">Official DnD site</a></div>
                                 </div>
@@ -68,26 +68,28 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                     <div class="two wide column"></div>
                     <div class="eight wide column">
                         <div class="text_background center_text_styles">
-                            <h2 class="subtitle_font">Help</h2><br>
+                            <h2 class="title_font">Help</h2>
                             <p>
-                            <ul>
-                                <li>Top Navigation Bar: hover over icon and click on link to navigate to page.</li><br>
-                                <li>Login: a unique ID is made for each name & password combination.  We will store
+                                <h1 class="subtitle_font_light">Top Navigation Bar</h1>
+                                Hover over icon and click on link to navigate to page.<br>
+                                <h1 class="subtitle_font_light">Login</h1>
+                                    A unique ID is made for each name & password combination.  We will store
                                     your list of characters under your unique ID.  Be sure to write down your username
-                                    and password so that you can access your list of characters at any time.</li><br>
-                                <li>Username: we are keeping accounts separate based on a combination of unique
-                                    username and password.  So there can be 100 "John Smith" accounts as long as
-                                    each one has a different password.</li><br>
-                                <li>Password:  we are not responsible for forgotten passwords.</li><br>
-                                <li>Guest account:  you do not need to have a login account to create a character,
-                                    but you do need a login account in order to have us save a list of characters
-                                    for you.  If you don't want to have a login account, you may proceed as a guest.
-                                    If you change your mind before you end your session, you may create a login
-                                    account.</li><br>
-                                <li>Game Help:  Please check out the links to the Wizards of the Coast website,
-                                    the official Dungeons and Dragons Player's Handbook, or your Dungeon Master for
-                                    help in playing the game.</li><br>
-                            </ul>
+                                    and password so that you can access your list of characters at any time.<br>
+                                <h1 class="subtitle_font_light">Username</h1>
+                                    We are keeping accounts separate based on a combination of unique username and
+                                    password.  So there can be 100 "John Smith" accounts as long as each one has a
+                                    different password.<br>
+                                <h1 class="subtitle_font_light">Password</h1>
+                                    We are not responsible for forgotten passwords.  Be sure to keep your password safe
+                                    and accessible.<br>
+                                <h1 class="subtitle_font_light">Guest account</h1>
+                                    If you would like us to save a list of characters for you, create an account.
+                                    Otherwise, you may proceed as a guest.  You may create an account any time before
+                                    you end your session.<br>
+                                <h1 class="subtitle_font_light">Game Help</h1>
+                                    Check out the links to the Wizards of the Coast website, the official Dungeons and
+                                    Dragons Player's Handbook, or your Dungeon Master for help in playing the game.<br>
                             </p>
                         </div>
                     </div>
@@ -96,7 +98,7 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                         <div class="ui center aligned grid">
                             <div class="column">
                                 <div class="dice_roller">
-                                    <p class="subtitle_font dark">Dice Roller</p>
+                                    <p class="subtitle_font_dark">Dice Roller</p>
                                     <div class="ui centered labeled input">
                                         <input style="width: 125px;" type="text" placeholder="number of dice">
                                         <div class="ui label">d</div>
@@ -115,7 +117,7 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="subtitle_font dark">Results:</p>
+                                    <p class="subtitle_font_dark">Results:</p>
                                         <div class="ui relaxed middle aligned celled list">
                                             <div class="centered item">{{ diceResults|linebreaks }}</div>
                                             <div class="item">{{ diceResults|linebreaks }}</div>

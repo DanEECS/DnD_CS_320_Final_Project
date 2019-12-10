@@ -8,7 +8,7 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DnD Character Creator</title>
+    <title>DnD Character Creator/classAndSpecialization</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript"
@@ -24,7 +24,7 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
     <link rel="stylesheet" href="Images/fontello-2711df08/fontello-2711df08/css/dnd_icons-embedded.css">
 </head>
 <body>
-    <div class="image_background2">
+    <div class="image_background4">
         <!--TOP NAVBAR-->
         <div class="ui container">
             <div class="text_background">
@@ -34,7 +34,7 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                     </div>
                     <div class="right menu">
                         <div class="large ui buttons">
-                            <div class="ui animated button" tabindex="0">
+                            <div class="ui animated fade button" tabindex="0">
                                 <div class="visible content"><i class="home icon"></i></div>
                                 <div class="hidden content"><a href="index.html">Home</a></div>
                             </div>
@@ -42,16 +42,16 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                                 <div class="visible content"><i class="user icon"></i></div>
                                 <div class="hidden content"><a href="login.html">Login</a></div>
                             </div>
-                            <div class="ui vertical animated button" tabindex="0">
+                            <div class="ui animated fade button" tabindex="0">
                                 <div class="visible content"><i class="question icon"></i></div>
                                 <div class="hidden content"><a href="help.html">Help</a></div>
                             </div>
-                            <div class="ui vertical animated button" tabindex="0">
+                            <div class="ui animated fade button" tabindex="0">
                                 <div class="visible content"><i class="info icon"></i></div>
                                 <div class="hidden content"><a href="about.html">About</a></div>
                             </div>
                             <div class="right_margin">
-                                <div class="ui vertical animated button" tabindex="0">
+                                <div class="ui animated fade button" tabindex="0">
                                     <div class="visible content">Wizards of the Coast</div>
                                     <div class="hidden content"><a href="https://dnd.wizards.com/" target="_blank">Official DnD site</a></div>
                                 </div>
@@ -69,18 +69,21 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                     <div class="eight wide column">
                         <!--TO KEEP USER'S SELECTIONS ON REFRESH/PAGE NAV, USE "ITEM" -
                         "SPAN CLASS TEXT" WILL CLEAR SELECTIONS-->
+                        <!--PROGRESS BAR NOT USED AS THESE PAGES WILL BE USED FOR EDITING CHARACTERS
                         <div class="ui indicating active progress" data-percent="" id="progressBar">
                             <div class="bar">
                                 <div class="progress"></div>
                             </div>
                                 <div class="label">Progress on your character</div>
                         </div>
-                        <div class="ui form"><p class="subtitle_font dark">Character: (Name of character)</p>
+                        -->
+                        <div class="ui form light"><p class="title_font_dark">Create/Edit Character - step 2</p>
+                            <p class="subtitle_font_dark">Character: (Name of character)</p>
                             <div class="field">
                                 <label>Class and specialization</label>
                                 <div class="ui inline dropdown">
                                 <input type="hidden" name="classSpec">
-                                <div class="text">Choose a class and specialization</div>
+                                <div class="text">select</div>
                                     <i class="dropdown icon"></i>
                                     <div class="menu">
                                         <div class="item">
@@ -140,7 +143,7 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                         <div class="ui center aligned grid">
                             <div class="column">
                                 <div class="dice_roller">
-                                    <p class="subtitle_font dark">Dice Roller</p>
+                                    <p class="subtitle_font_dark">Dice Roller</p>
                                     <div class="ui centered labeled input">
                                         <input style="width: 125px;" type="text" placeholder="number of dice">
                                         <div class="ui label">d</div>
@@ -159,7 +162,7 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="subtitle_font dark">Results:</p>
+                                    <p class="subtitle_font_dark">Results:</p>
                                         <div class="ui relaxed middle aligned celled list">
                                             <div class="centered item">{{ diceResults|linebreaks }}</div>
                                             <div class="item">{{ diceResults|linebreaks }}</div>
