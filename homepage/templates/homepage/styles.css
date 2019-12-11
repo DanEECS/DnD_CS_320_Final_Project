@@ -12,7 +12,11 @@ https://stackoverflow.com/questions/36310296/looping-through-images-array-and-sh
 .ui.container {
     width: 100%;
     height: auto;
+    bottom: 0px;
     /*border: 2px solid aqua;*/
+}
+.ui.grid {
+    height: auto;
 }
 .ui.transparent.placeholder.segment {
     width: 100%;
@@ -130,50 +134,52 @@ a.light {
 
 /*BACKGROUND COLORS AND IMAGES*/
 body {
+    height: 100%;
     background-color: #000000;
 }
+
+/*ORIENTATION: LANDSCAPE, NICE AND SHARP IMAGES*/
 .image_background1 {
     background: url("Images/DnD_Starter_Art.jpg") !important; /*no-repeat center center fixed;*/
-    background-size: cover !important;;
+    background-size: cover !important;
     height: 100%;
 }
 .image_background2 {
     background: url("Images/DnD_DMG_Art.jpg") !important; /*no-repeat center center fixed;*/
-    background-size: cover !important;;
+    background-size: cover !important;
     height: 100%;
 }
 .image_background3 {
     background: url("Images/DnD_MM_Art.jpg") !important; /*no-repeat center center fixed;*/
-    background-size: cover !important;;
+    background-size: cover !important;
     height: 100%;
 }
 .image_background4 {
     background: url("Images/DnD_PHB_Art.jpg") !important; /*no-repeat center center fixed;*/
-    background-size: cover !important;;
+    background-size: cover !important;
     height: 100%;
 }
-/*THIS SET OF IMAGES NOT USED BECAUSE THEY DO NOT RENDER AS WELL - NOT AS SHARP
+/*ORIENTATION: PORTRAIT, NOT AS SHARP AS IMAGES ABOVE*/
 .image_background5 {
     background: url("Images/illo1.jpg") !important;
-    background-size: cover !important;;
+    background-size: cover !important;
     height: 100%;
 }
 .image_background6 {
     background: url("Images/illo2.jpg") !important;
-    background-size: cover !important;;
+    background-size: cover !important;
     height: 100%;
 }
 .image_background7 {
     background: url("Images/illo3.jpg") !important;
-    background-size: cover !important;;
+    background-size: cover !important;
     height: 100%;
 }
 .image_background8 {
     background: url("Images/illo4.jpg") !important;
-    background-size: cover !important;;
+    background-size: cover !important;
     height: 100%;
 }
-*/
 .text_background {
     background-color: #000000;
     opacity: 75%;
