@@ -24,7 +24,7 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
     <link rel="stylesheet" href="Images/fontello-2711df08/fontello-2711df08/css/dnd_icons-embedded.css">
 </head>
 <body>
-    <div class="image_background2">
+    <div class="image_background1"> <!--NEED A LONG IMAGE FOR THIS PAGE-->
         <!--TOP NAVBAR-->
         <div class="ui container">
             <div class="text_background">
@@ -62,22 +62,24 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
             </div>
         </div>
         <!--MIDDLE SECTION-->
-        <div class="ui container">
+        <div class="ui fluid container">
             <div class="ui grid" >
                 <div class="three column row">
-                    <div class="two wide column"></div>
-                    <div class="eight wide column">
+                    <div class="one wide column"></div>
+                    <div class="ten wide column">
                         <!--TO KEEP USER'S SELECTIONS ON REFRESH/PAGE NAV, USE "ITEM" -
                         "SPAN CLASS TEXT" WILL CLEAR SELECTIONS-->
+                        <!--PROGRESS BAR NOT USED AS THESE PAGES WILL BE USED FOR EDITING CHARACTERS
                         <div class="ui indicating active progress" data-percent="" id="progressBar">
                             <div class="bar">
                                 <div class="progress"></div>
                             </div>
                                 <div class="label">Progress on your character</div>
                         </div>
-                        <p class="subtitle_font dark">Character: (Name of character) - Character Description<br></p>
-                        <p class="dark">Select one characteristic from each drop down menu.</p>
-                        <div class="ui form">
+                        -->
+                        <div class="ui form light"><p class="title_font_dark">Create/Edit Character - step 4</p>
+                            <p class="subtitle_font_dark">Character: (Name of character)</p>
+                            <p class="dark">Select one characteristic from each drop down menu.</p>
                             <div class="fields">
                                 <div class="field">
                                     <div class="inline field"><label><p class="dark bigger_font">Alignment</p></label>
@@ -120,25 +122,123 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                                     </div>
                                     <div class="inline field"><label><p class="dark bigger_font">Ideals</p></label>
                                         <div class="ui inline dropdown">
-                                            <div class="text">Acolyte</div>
+                                            <div class="text"></div>
                                             <i class="dropdown icon"></i>
                                             <div class="menu">
-                                                <div class="item" data-value="1">Acolyte: Tradition: The ancient
-                                                    traditions of worship and sacrifice must be upheld. (Lawful)</div>
-                                                <div class="item" data-value="0">Acolyte: Charity: I always try to help
-                                                    those in need, no matter what the cost. (Good)</div>
-                                                <div class="item" data-value="1">Acolyte: Change: We must bring about
-                                                    the changes the gods are constantly working in the world. (Chaotic)</div>
-                                                <div class="item" data-value="0">Acolyte: Power: I hope to one day rise
-                                                    to the top of my faith's religious hierarchy. (Lawful)</div>
-                                                <div class="item" data-value="1">Acolyte: Faith: I trust that my deity
-                                                    will guide my actions. I have faith that if I work hard, things will
-                                                    go well. (Lawful)</div>
-                                                <div class="item" data-value="0">Acolyte: Aspiration
-                                                    <div class="ui message">
-                                                        <p class="dark">Acolyte: I seek to prove myself worthy of my god's
-                                                            favor by matching my actions against his or her teachings. (Any)</p>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Acolyte</span>
+                                                    <div class="menu">
+                                                        <div class="item" data-value="1">Tradition: The ancient
+                                                        traditions of worship and sacrifice must be upheld. (Lawful)</div>
+                                                        <div class="item" data-value="0">Charity: I always try to help
+                                                            those in need, no matter what the cost. (Good)</div>
+                                                        <div class="item" data-value="1">Change: We must bring about
+                                                            the changes the gods are constantly working in the world. (Chaotic)</div>
+                                                        <div class="item" data-value="0">Power: I hope to one day rise
+                                                            to the top of my faith's religious hierarchy. (Lawful)</div>
+                                                        <div class="item" data-value="1">Faith: I trust that my deity
+                                                            will guide my actions. I have faith that if I work hard, things will
+                                                            go well. (Lawful)</div>
+                                                        <div class="item" data-value="0">Aspiration: I seek to prove myself worthy of my god's
+                                                                    favor by matching my actions against his or her teachings. (Any)</div>
                                                     </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Charlatan</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Criminal</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Entertainer</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Folk Hero</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Guild Artisan</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Hermit</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Noble</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Outlander</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Sage</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Sailor</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Soldier</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Urchin</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -148,16 +248,135 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                                             <div class="text"></div>
                                             <i class="dropdown icon"></i>
                                             <div class="menu">
-                                                <div class="item" data-value="1"><p class="dark">I would die to recover an ancient relic
-                                                of my faith that was lost long ago.</p></div>
-                                                <div class="item" data-value="0">4</div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Acolyte</span>
+                                                    <div class="menu">
+                                                        <div class="item" data-value="1">I would die to recover an ancient
+                                                            relic of my faith that was lost long ago.</div>
+                                                        <div class="item" data-value="0">I will someday get revenge on
+                                                            the corrupt temple hierarchy who branded me a heretic.</div>
+                                                        <div class="item" data-value="1">I owe my life to the priest who
+                                                            took me in when my parents died.</div>
+                                                        <div class="item" data-value="0">Everything I do is for the
+                                                            common people.</div>
+                                                        <div class="item" data-value="1">I will do anything to protect
+                                                            the temple where I served.</div>
+                                                        <div class="item" data-value="0">I seek to preserve a sacred text
+                                                            that my enemies consider heretical and seek to destroy.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Charlatan</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Criminal</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Entertainer</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Folk Hero</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Guild Artisan</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Hermit</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Noble</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Outlander</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Sage</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Sailor</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Soldier</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Urchin</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="inline field"><label><p class="dark bigger_font">Skills<br></p>
+                                    <div class="inline field"><label><p class="dark bigger_font">Skills/Personality Traits</p></label>
                                         <p class="dark">Select 2 skills from the choices below.  Honor system applies here.  This is
-                                        between you and your DM.</p></label>
-                                        <div class="ui form">
+                                        between you and your DM.</p>
+
+                                        <div class="ui inline dropdown">
+                                            <div class="text"></div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Acolyte</span>
+                                                    <div class="ui form">
                                             <div class="inline field">
                                                 <div class="ui checkbox">
                                                     <input type="checkbox">
@@ -171,22 +390,120 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                                                 </div>
                                             </div>
                                         </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Charlatan</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Criminal</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Entertainer</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Folk Hero</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Guild Artisan</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Hermit</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Noble</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Outlander</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Sage</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Sailor</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Soldier</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="dropdown icon"></i>
+                                                    <span class="text">Urchin</span>
+                                                        <div class="menu">
+                                                            <div class="item">Hill Dwarf</div>
+                                                            <div class="item">Mountain Dwarf</div>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="field">
-                                <div class="ui violet large submit button"><a class="light" href="classAndSpecialization.html">Back</a></div>
-                                <div class="ui large yellow submit button"><a class="dark" href="classAndSpecialization.html">Next</a></div>
+                                <div class="ui violet large submit button"><a class="light" href="addAttributes.html">Back</a></div>
+                                <div class="ui large yellow submit button"><a class="dark" href="equipment.html">Next</a></div>
                             </div>
                         </div>
-
                     </div>
-                    <div class="two wide column"></div>
+                    <div class="one wide column"></div>
                     <div class="four wide column">
                         <div class="ui center aligned grid">
                             <div class="column">
                                 <div class="dice_roller">
-                                    <p class="subtitle_font dark">Dice Roller</p>
+                                    <p class="subtitle_font_dark">Dice Roller</p>
                                     <div class="ui centered labeled input">
                                         <input style="width: 125px;" type="text" placeholder="number of dice">
                                         <div class="ui label">d</div>
@@ -205,7 +522,7 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="subtitle_font dark">Results:</p>
+                                    <p class="subtitle_font_dark">Results:</p>
                                         <div class="ui relaxed middle aligned celled list">
                                             <div class="centered item">{{ diceResults|linebreaks }}</div>
                                             <div class="item">{{ diceResults|linebreaks }}</div>
