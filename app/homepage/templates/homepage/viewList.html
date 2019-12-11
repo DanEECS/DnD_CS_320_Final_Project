@@ -43,8 +43,32 @@
                 <div class="three column row">
                     <div class="two wide column"></div>
                     <div class="eight wide column">
-                        <p class="dark">Successful login/create account.  PAGE UNDER CONSTRUCTION></p>
-
+                        <div class="ui form light"><p class="dark">Successful login/create account.</p>
+                            <p class="title_font_dark">List of Characters</p>
+                            <p class="dark">Select a character to view, edit, delete.</p>
+                            <div class="ui relaxed middle aligned celled list">
+                                <div class="centered item">{{ charResults|linebreaks }}</div>
+                                <div class="item">{{ charResults|linebreaks }}</div>
+                                <div class="item">{{ charResults|linebreaks }}</div>
+                            </div>
+                            <div class="ui form">
+                                <div class="fields">
+                                    <div class="field">
+                                        <div class="ui blue massive submit button"><a class="dark" href="viewCharacter.html">View</a></div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui teal massive submit button"><a class="dark" href="createNewCharacter.html">Edit</a></div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui orange massive submit button"><a class="dark" href="pointBuy.html">Delete - where should this view go?</a></div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui violet large submit button"><a class="light" href="classAndSpecialization.html">Back</a></div>
+                                    <div class="ui large yellow submit button"><a class="dark" href="classAndSpecialization.html">Next</a></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="two wide column"></div>
                     <div class="four wide column">
