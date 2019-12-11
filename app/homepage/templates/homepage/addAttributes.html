@@ -1,0 +1,122 @@
+{% extends "homepage/base.html" %}
+{% block content %}
+    <div class="image_background2">
+        <!--TOP NAVBAR-->
+        <div class="ui container">
+            <div class="text_background">
+                <div class="ui menu">
+                    <div class="left_margin">
+                        <h1 class="title_font">Dungeons and Dragons Character Creator</h1>
+                    </div>
+                    <div class="right menu">
+                        <div class="large ui buttons">
+                            <div class="ui animated button" tabindex="0">
+                                <div class="visible content"><i class="home icon"></i></div>
+                                <div class="hidden content"><a href="{% url 'index' %}">Home</a></div>
+                            </div>
+                            <div class="ui animated fade button" tabindex="0">
+                                <div class="visible content"><i class="user icon"></i></div>
+                                <div class="hidden content"><a href="login/">Login</a></div>
+                            </div>
+                            <div class="ui vertical animated button" tabindex="0">
+                                <div class="visible content"><i class="question icon"></i></div>
+                                <div class="hidden content"><a href="{% url 'help' %}">Help</a></div>
+                            </div>
+                            <div class="ui vertical animated button" tabindex="0">
+                                <div class="visible content"><i class="info icon"></i></div>
+                                <div class="hidden content"><a href="{% url 'about' %}">About</a></div>
+                            </div>
+                            <div class="right_margin">
+                                <div class="ui vertical animated button" tabindex="0">
+                                    <div class="visible content">Wizards of the Coast</div>
+                                    <div class="hidden content"><a href="https://dnd.wizards.com/" target="_blank">Official DnD site</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--MIDDLE SECTION-->
+        <div class="ui container">
+            <div class="ui grid" >
+                <div class="three column row">
+                    <div class="two wide column"></div>
+                    <div class="eight wide column">
+                        <!--TO KEEP USER'S SELECTIONS ON REFRESH/PAGE NAV, USE "ITEM" -
+                        "SPAN CLASS TEXT" WILL CLEAR SELECTIONS-->
+                        <div class="ui indicating active progress" data-percent="" id="progressBar">
+                            <div class="bar">
+                                <div class="progress"></div>
+                            </div>
+                                <div class="label">Progress on your character</div>
+                        </div>
+                        <p class="subtitle_font dark">Character: (Name of character)</p>
+                        <label>Choose a method to add attributes:</label>
+                        <div class="ui form">
+                            <div class="fields">
+                                <div class="field">
+                                    <div class="ui lightgrey massive submit button"><a class="dark" href="manual.html">Manual</a></div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui lightgrey massive submit button"><a class="dark" href="standardArray.html">Standard Array</a></div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui lightgrey massive submit button"><a class="dark" href="pointBuy.html">Point Buy</a></div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui violet large submit button"><a class="light" href="classAndSpecialization.html">Back</a></div>
+                                <div class="ui large yellow submit button"><a class="dark" href="classAndSpecialization.html">Next</a></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="two wide column"></div>
+                    <div class="four wide column">
+                        <div class="ui center aligned grid">
+                            <div class="column">
+                                <div class="dice_roller">
+                                    <p class="subtitle_font dark">Dice Roller</p>
+                                    <div class="ui centered labeled input">
+                                        <input style="width: 125px;" type="text" placeholder="number of dice">
+                                        <div class="ui label">d</div>
+                                        <div class="ui dropdown label">
+                                            <div class="text"># sides</div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item">2</div>
+                                                <div class="item">4</div>
+                                                <div class="item">6</div>
+                                                <div class="item">8</div>
+                                                <div class="item">10</div>
+                                                <div class="item">12</div>
+                                                <div class="item">20</div>
+                                                <div class="item">100</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="subtitle_font dark">Results:</p>
+                                        <div class="ui relaxed middle aligned celled list">
+                                            <div class="centered item">{{ diceResults|linebreaks }}</div>
+                                            <div class="item">{{ diceResults|linebreaks }}</div>
+                                            <div class="item">{{ diceResults|linebreaks }}</div>
+                                        </div>
+                                        <!--CREATES A BULLETED LIST - IS THIS WHAT WE WANT?
+                                        <ul>
+                                            {% for roll in varDiceRoll %}
+                                            <li>
+                                                {{ diceResults|linebreaks }}
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
+                                        -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

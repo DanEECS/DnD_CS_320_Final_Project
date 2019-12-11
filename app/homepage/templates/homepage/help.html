@@ -1,0 +1,117 @@
+{% extends "homepage/base.html" %}
+{% block content %}
+    <div class="image_background2">
+        <!--TOP NAVBAR-->
+        <div class="ui container">
+            <div class="text_background">
+                <div class="ui menu">
+                    <div class="left_margin">
+                        <h1 class="title_font">Dungeons and Dragons Character Creator</h1>
+                    </div>
+                    <div class="right menu">
+                        <div class="large ui buttons">
+                            <div class="ui animated button" tabindex="0">
+                                <div class="visible content"><i class="home icon"></i></div>
+                                <div class="hidden content"><a href="{% url 'index' %}">Home</a></div>
+                            </div>
+                            <div class="ui animated fade button" tabindex="0">
+                                <div class="visible content"><i class="user icon"></i></div>
+                                <div class="hidden content"><a href="login/">Login</a></div>
+                            </div>
+                            <div class="ui vertical animated button" tabindex="0">
+                                <div class="visible content"><i class="question icon"></i></div>
+                                <div class="hidden content"><a href="{% url 'help' %}">Help</a></div>
+                            </div>
+                            <div class="ui vertical animated button" tabindex="0">
+                                <div class="visible content"><i class="info icon"></i></div>
+                                <div class="hidden content"><a href="{% url 'about' %}">About</a></div>
+                            </div>
+                            <div class="right_margin">
+                                <div class="ui vertical animated button" tabindex="0">
+                                    <div class="visible content">Wizards of the Coast</div>
+                                    <div class="hidden content"><a href="https://dnd.wizards.com/" target="_blank">Official DnD site</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--MIDDLE SECTION-->
+        <div class="ui container">
+            <div class="ui grid" >
+                <div class="three column row">
+                    <div class="two wide column"></div>
+                    <div class="eight wide column">
+                        <div class="text_background center_text_styles">
+                            <h2 class="subtitle_font">Help</h2><br>
+                            <p>
+                            <ul>
+                                <li>Top Navigation Bar: hover over icon and click on link to navigate to page.</li><br>
+                                <li>Login: a unique ID is made for each name & password combination.  We will store
+                                    your list of characters under your unique ID.  Be sure to write down your username
+                                    and password so that you can access your list of characters at any time.</li><br>
+                                <li>Username: we are keeping accounts separate based on a combination of unique
+                                    username and password.  So there can be 100 "John Smith" accounts as long as
+                                    each one has a different password.</li><br>
+                                <li>Password:  we are not responsible for forgotten passwords.</li><br>
+                                <li>Guest account:  you do not need to have a login account to create a character,
+                                    but you do need a login account in order to have us save a list of characters
+                                    for you.  If you don't want to have a login account, you may proceed as a guest.
+                                    If you change your mind before you end your session, you may create a login
+                                    account.</li><br>
+                                <li>Game Help:  Please check out the links to the Wizards of the Coast website,
+                                    the official Dungeons and Dragons Player's Handbook, or your Dungeon Master for
+                                    help in playing the game.</li><br>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="two wide column"></div>
+                    <div class="four wide column">
+                        <div class="ui center aligned grid">
+                            <div class="column">
+                                <div class="dice_roller">
+                                    <p class="subtitle_font dark">Dice Roller</p>
+                                    <div class="ui centered labeled input">
+                                        <input style="width: 125px;" type="text" placeholder="number of dice">
+                                        <div class="ui label">d</div>
+                                        <div class="ui dropdown label">
+                                            <div class="text"># sides</div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item">2</div>
+                                                <div class="item">4</div>
+                                                <div class="item">6</div>
+                                                <div class="item">8</div>
+                                                <div class="item">10</div>
+                                                <div class="item">12</div>
+                                                <div class="item">20</div>
+                                                <div class="item">100</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="subtitle_font dark">Results:</p>
+                                        <div class="ui relaxed middle aligned celled list">
+                                            <div class="centered item">{{ diceResults|linebreaks }}</div>
+                                            <div class="item">{{ diceResults|linebreaks }}</div>
+                                            <div class="item">{{ diceResults|linebreaks }}</div>
+                                        </div>
+                                        <!--CREATES A BULLETED LIST - IS THIS WHAT WE WANT?
+                                        <ul>
+                                            {% for roll in varDiceRoll %}
+                                            <li>
+                                                {{ diceResults|linebreaks }}
+                                            </li>
+                                        </ul>
+                                            {% endfor %}
+                                        -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
