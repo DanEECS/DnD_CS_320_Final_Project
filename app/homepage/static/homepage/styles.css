@@ -74,6 +74,11 @@ label {
 label.bigger {
     padding: 10px;
 }
+legend {
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    color: black;
+}
 /*ADDITIONAL PROJECT STYLES - SOME ARE FROM SAMPLE CODE PROVIDED BY INSTRUCTOR*/
 /*FONT STYLES AND COLORS*/
 * {
