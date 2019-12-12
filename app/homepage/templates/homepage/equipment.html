@@ -1,27 +1,6 @@
-<!--/*
-Team DMRT:  Daniel Garrett, Matthew Fritz, Ruth Woodcock, Trevor McLam
-CS 320 Software Engineering, Fall 2019
-Final Project: DnD Character Management System, December 13, 2019
-
-SEE CSS FILE FOR OUTSIDE RESOURCES-->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>DnD Character Creator/logout</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="image_background1">
+{% extends "homepage/base.html" %}
+{% block content %}
+<div class="image_background2">
         <!--TOP NAVBAR-->
         <div class="ui container">
             <div class="text_background">
@@ -33,19 +12,25 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                         <div class="large ui buttons">
                             <div class="ui animated fade button" tabindex="0">
                                 <div class="visible content"><i class="home icon"></i></div>
-                                <div class="hidden content"><a href="index.html">Home</a></div>
+                                <div class="hidden content"><a href="{% url 'index' %}">Home</a></div>
                             </div>
                             <div class="ui animated fade button" tabindex="0">
                                 <div class="visible content"><i class="user icon"></i></div>
-                                <div class="hidden content"><a href="login.html">Login</a></div>
+                                <div class="hidden content">
+                                    {% if user.is_authenticated %}
+                                        <a href="{% url 'logout' %}">Logout</a>
+                                    {% else %}
+                                        <a href="{% url 'login' %}">Login</a>
+                                    {% endif %}
+                                </div>
                             </div>
                             <div class="ui animated fade button" tabindex="0">
                                 <div class="visible content"><i class="question icon"></i></div>
-                                <div class="hidden content"><a href="help.html">Help</a></div>
+                                <div class="hidden content"><a href="{% url 'help' %}">Help</a></div>
                             </div>
                             <div class="ui animated fade button" tabindex="0">
                                 <div class="visible content"><i class="info icon"></i></div>
-                                <div class="hidden content"><a href="about.html">About</a></div>
+                                <div class="hidden content"><a href="{% url 'about' %}">About</a></div>
                             </div>
                             <div class="right_margin">
                                 <div class="ui animated fade button" tabindex="0">
@@ -64,11 +49,50 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                 <div class="three column row">
                     <div class="two wide column"></div>
                     <div class="eight wide column">
-                        <div class="ui form light"><p class="title_font_dark">Logout</p>
-                            <p class="subtitle_font_dark">You have successfully logged out.</p>
-
+                        <!--TO KEEP USER'S SELECTIONS ON REFRESH/PAGE NAV, USE "ITEM" -
+                        "SPAN CLASS TEXT" WILL CLEAR SELECTIONS-->
+                        <div class="ui form light"><p class="title_font_dark">Choose Equipment - step 6</p>
+                            <p class="subtitle_font_dark">Character: (Name of character)</p>
+                            <p class="dark">Select one piece of equipment from each drop down menu.</p>
+                            <div class="fields">
+                                <div class="field">
+                                    <div class="inline field"><label><p class="dark bigger_font">Choice 1</p></label>
+                                        <div class="ui inline dropdown">
+                                            <div class="text"></div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item" data-value="1">Weapon 1</div>
+                                                <div class="item" data-value="0">Weapon 2</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline field"><label><p class="dark bigger_font">Choice 2</p></label>
+                                        <div class="ui inline dropdown">
+                                            <div class="text"></div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item" data-value="1">Armor 1</div>
+                                                <div class="item" data-value="0">Armor 2</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline field"><label><p class="dark bigger_font">Choice 3</p></label>
+                                        <div class="ui inline dropdown">
+                                            <div class="text"></div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item" data-value="1">Thing 1</div>
+                                                <div class="item" data-value="0">Thing 2</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui violet large submit button"><a class="light" href="charSkillsTraits.html">Back</a></div>
+                                    <div class="ui large yellow submit button"><a class="dark" href="viewCharacter.html">Next</a></div>
+                                </div>
+                            </div>
                         </div>
-
                     </div>
                     <div class="two wide column"></div>
                     <div class="four wide column">
@@ -106,6 +130,7 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
                                             <li>
                                                 {{ diceResults|linebreaks }}
                                             </li>
+                                            {% endfor %}
                                         </ul>
                                         -->
                                 </div>
@@ -116,32 +141,4 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
             </div>
         </div>
     </div>
-    <!--FOOTER SECTION-->
-    <div class="ui container">
-        <div class="text_background footer_styles">
-            <div class="left_margin right_margin">
-                <div class="ui center aligned grid">
-                    <div class="sixteen wide column">
-                        <p>COPYRIGHT &copy 2019 Team DMRT (Daniel Garrett, Matthew Fritz, Ruth Woodcock, Trevor McLam)<br><br>
-                            Wizards of the Coast, Dungeons & Dragons, and their logos are trademarks of Wizards of the Coast
-                            LLC in the United States and other countries. © 2015 Wizards. All Rights Reserved.<br><br>
-                            This Web site is not affiliated with, endorsed, sponsored, or specifically approved by Wizards of
-                            the Coast LLC. This Web site may use the trademarks and other intellectual property of Wizards of
-                            the Coast LLC, which is permitted under <a href="https://dnd.wizards.com/articles/features/fan-site-kit" target="_blank">
-                                Wizards' Fan Site Policy</a>. For example, Dungeons & Dragons® is a trademark[s] of Wizards of
-                            the Coast. For more information about Wizards of the Coast or any of Wizards' trademarks or other
-                            intellectual property, please visit their website at (<a href="https://company.wizards.com/" target="_blank">
-                                www.wizards.com</a>).<br><br>
-
-                            Team DMRT has made every effort to honor the Fan Site Policy as described in the Wizards
-                            Fan Site Policy listed above.  If there are any questions, please contact Ruth Woodcock at
-                            <a href="mailto:ruth.woodcock.wsu.edu">ruth.woodcock.wsu.edu</a>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="scripts.js"></script>
-</body>
-</html>
+{% endblock %}

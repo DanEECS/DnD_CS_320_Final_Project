@@ -30,6 +30,13 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
 
 </head>
 <body>
+    {% if messages %}
+        {% for message in messages %}
+            <div class="ui {{ message.tags }} message">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
     {% block content %} {% endblock %}
     <!--FOOTER SECTION-->
     <div class="ui container">
@@ -57,6 +64,6 @@ SEE CSS FILE FOR OUTSIDE RESOURCES-->
             </div>
         </div>
     </div>
-    <script src="{% static 'homepage/script.js' %}"></script>
+    <script src="{% static 'homepage/scripts.js' %}"></script>
 </body>
 </html>
