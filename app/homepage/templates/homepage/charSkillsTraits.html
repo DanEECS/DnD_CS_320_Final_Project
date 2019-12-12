@@ -1,0 +1,200 @@
+{% extends "homepage/base.html" %}
+{% block content %}
+<div class="image_background2">
+        <!--TOP NAVBAR-->
+        <div class="ui container">
+            <div class="text_background">
+                <div class="ui menu">
+                    <div class="left_margin">
+                        <h1 class="title_font">Dungeons and Dragons Character Creator</h1>
+                    </div>
+                    <div class="right menu">
+                        <div class="large ui buttons">
+                            <div class="ui animated button" tabindex="0">
+                                <div class="visible content"><i class="home icon"></i></div>
+                                <div class="hidden content"><a href="{% url 'index' %}">Home</a></div>
+                            </div>
+                            <div class="ui animated fade button" tabindex="0">
+                                <div class="visible content"><i class="user icon"></i></div>
+                                <div class="hidden content"><a href="login/">Login</a></div>
+                            </div>
+                            <div class="ui vertical animated button" tabindex="0">
+                                <div class="visible content"><i class="question icon"></i></div>
+                                <div class="hidden content"><a href="{% url 'help' %}">Help</a></div>
+                            </div>
+                            <div class="ui vertical animated button" tabindex="0">
+                                <div class="visible content"><i class="info icon"></i></div>
+                                <div class="hidden content"><a href="{% url 'about' %}">About</a></div>
+                            </div>
+                            <div class="right_margin">
+                                <div class="ui vertical animated button" tabindex="0">
+                                    <div class="visible content">Wizards of the Coast</div>
+                                    <div class="hidden content"><a href="https://dnd.wizards.com/" target="_blank">Official DnD site</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--MIDDLE SECTION-->
+        <div class="ui container">
+            <div class="ui grid" >
+                <div class="three column row">
+                    <div class="two wide column"></div>
+                    <div class="eight wide column">
+                        <p class="subtitle_font dark">Character: (Name of character) - Skills and Personality Traits<br></p>
+                        <p class="dark">Select 2 skills from the choices below.  Honor system applies here.  This is
+                            between you and your DM.</p>
+                        <div class="ui form">
+                            <div class="fields">
+                                <div class="field">
+                                    <div class="inline field"><label><p class="dark bigger_font">Alignment</p></label>
+                                        <div class="ui inline dropdown">
+                                            <div class="text"></div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item" data-value="1">Lawful Good</div>
+                                                <div class="item" data-value="0">Neutral Good</div>
+                                                <div class="item" data-value="1">Chaotic Good</div>
+                                                <div class="item" data-value="0">Lawful Neutral</div>
+                                                <div class="item" data-value="1">Neutral</div>
+                                                <div class="item" data-value="0">Neutral Chaotic</div>
+                                                <div class="item" data-value="1">Lawful Evil</div>
+                                                <div class="item" data-value="0">Neutral Evil</div>
+                                                <div class="item" data-value="0">Chaotic Evil</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline field"><label><p class="dark bigger_font">Background</p></label>
+                                        <div class="ui inline dropdown">
+                                            <div class="text"></div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item" data-value="1">Acolyte</div>
+                                                <div class="item" data-value="0">Charlatan</div>
+                                                <div class="item" data-value="1">Criminal</div>
+                                                <div class="item" data-value="0">Entertainer</div>
+                                                <div class="item" data-value="1">Folk Hero</div>
+                                                <div class="item" data-value="0">Guild Artisan</div>
+                                                <div class="item" data-value="1">Hermit</div>
+                                                <div class="item" data-value="0">Noble</div>
+                                                <div class="item" data-value="0">Outlander</div>
+                                                <div class="item" data-value="0">Sage</div>
+                                                <div class="item" data-value="1">Sailor</div>
+                                                <div class="item" data-value="0">Soldier</div>
+                                                <div class="item" data-value="0">Urchin</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline field"><label><p class="dark bigger_font">Ideals</p></label>
+                                        <div class="ui inline dropdown">
+                                            <div class="text">Acolyte</div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item" data-value="1">Acolyte: Tradition: The ancient
+                                                    traditions of worship and sacrifice must be upheld. (Lawful)</div>
+                                                <div class="item" data-value="0">Acolyte: Charity: I always try to help
+                                                    those in need, no matter what the cost. (Good)</div>
+                                                <div class="item" data-value="1">Acolyte: Change: We must bring about
+                                                    the changes the gods are constantly working in the world. (Chaotic)</div>
+                                                <div class="item" data-value="0">Acolyte: Power: I hope to one day rise
+                                                    to the top of my faith's religious hierarchy. (Lawful)</div>
+                                                <div class="item" data-value="1">Acolyte: Faith: I trust that my deity
+                                                    will guide my actions. I have faith that if I work hard, things will
+                                                    go well. (Lawful)</div>
+                                                <div class="item" data-value="0">Acolyte: Aspiration
+                                                    <div class="ui message">
+                                                        <p class="dark">Acolyte: I seek to prove myself worthy of my god's
+                                                            favor by matching my actions against his or her teachings. (Any)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline field"><label><p class="dark bigger_font">Bonds</p></label>
+                                        <div class="ui inline dropdown">
+                                            <div class="text"></div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item" data-value="1"><p class="dark">I would die to recover an ancient relic
+                                                of my faith that was lost long ago.</p></div>
+                                                <div class="item" data-value="0">4</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline field"><label><p class="dark bigger_font">Skills<br></p>
+                                        <p class="dark">Select 2 skills from the choices below.  Honor system applies here.  This is
+                                        between you and your DM.</p></label>
+                                        <div class="ui form">
+                                            <div class="inline field">
+                                                <div class="ui checkbox">
+                                                    <input type="checkbox">
+                                                    <label>Checkbox</label>
+                                                </div>
+                                            </div>
+                                            <div class="inline field">
+                                                <div class="ui toggle checkbox">
+                                                    <input type="checkbox">
+                                                    <label>Toggle</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui violet large submit button"><a class="light" href="classAndSpecialization.html">Back</a></div>
+                                <div class="ui large yellow submit button"><a class="dark" href="classAndSpecialization.html">Next</a></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="two wide column"></div>
+                    <div class="four wide column">
+                        <div class="ui center aligned grid">
+                            <div class="column">
+                                <div class="dice_roller">
+                                    <p class="subtitle_font_dark">Dice Roller</p>
+                                    <div class="ui centered labeled input">
+                                        <input style="width: 125px;" type="text" placeholder="number of dice">
+                                        <div class="ui label">d</div>
+                                        <div class="ui dropdown label">
+                                            <div class="text"># sides</div>
+                                            <i class="dropdown icon"></i>
+                                            <div class="menu">
+                                                <div class="item">2</div>
+                                                <div class="item">4</div>
+                                                <div class="item">6</div>
+                                                <div class="item">8</div>
+                                                <div class="item">10</div>
+                                                <div class="item">12</div>
+                                                <div class="item">20</div>
+                                                <div class="item">100</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="subtitle_font_dark">Results:</p>
+                                        <div class="ui relaxed middle aligned celled list">
+                                            <div class="centered item">{{ diceResults|linebreaks }}</div>
+                                            <div class="item">{{ diceResults|linebreaks }}</div>
+                                            <div class="item">{{ diceResults|linebreaks }}</div>
+                                        </div>
+                                        <!--CREATES A BULLETED LIST - IS THIS WHAT WE WANT?
+                                        <ul>
+                                            {% for roll in varDiceRoll %}
+                                            <li>
+                                                {{ diceResults|linebreaks }}
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
+                                        -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
