@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .forms import *
-from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin, messages
 from django.contrib.auth.views import LoginView
 
 
@@ -16,14 +16,7 @@ def createAccount(request):
     return render(request, 'users/createAccount.html', {'form': registerform})
 
 
-def Login(request):
-    if request.method == 'POST':
-        loginform = LoginForm(request.POST)
-        if loginform.is_valid():
-            username = loginform.cleaned_data.get('username')
-            loginform.save()
-            messages.success(request, f'Welcome back {username}!')
-            return redirect('viewCharacters')
-    else:
-        loginform = LoginForm()
-    return render(request, 'users/login.html', {'form': loginform})
+class LoginView(SuccessMessageMixin, LoginView):
+    template_name = 'login.html'
+    success_url = 'viewCharacters/'
+    # username = super().request.user.username

@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib.auth.models import User
 from django.utils import timezone
 from .forms import *
 from django.views.generic import TemplateView, ListView
@@ -65,7 +66,7 @@ class ViewCharacters(ListView):
 	model = Character
 	context_object_name = 'characters'
 	ordering = ['date_made']
-	# queryset = model.objects.filter('')
+	# queryset = model.objects.filter(author='')
 	paginate_by = 100  # if pagination is needed
 	# user_characters = Character.objects.filter('')
 
