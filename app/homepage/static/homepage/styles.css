@@ -70,6 +70,7 @@ https://stackoverflow.com/questions/36310296/looping-through-images-array-and-sh
 .ui.message {
     background-color: #FFFFFF;
     opacity: 70%;
+    border-style: hidden;
     color: black;
 }
 .ui.labeled.input {
@@ -112,6 +113,11 @@ a.light {
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
     color: #ffffff;
+}
+.title_font_dark {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: #000000;
 }
 .subtitle_font_light {
     font-family: 'Oswald', sans-serif;
@@ -168,6 +174,8 @@ body {
     /*background-color: lime;*/
     opacity: 70%;
     width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
     height: 100%;
     padding: 30px;
     color: black;
