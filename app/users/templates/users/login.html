@@ -53,11 +53,13 @@
                         <div class="column">
                             <div class="content-section">
                                 <form class="ui form" method="POST">
+                                    <p></p> <!--THIS JUST ADDS A LINE BREAK-->
                                     {% csrf_token %}
                                     {% render_form form %}
                                     <button class="ui blue submit button" type="submit">Login</button>
+                                    <p></p> <!--THIS JUST ADDS A LINE BREAK-->
                                 </form>
-                                <div class="ui bottom attached borderless warning message">
+                                <div class="ui bottom attached warning message">
                                     <i class="icon help"></i>
                                     Need an account? <a href="{% url 'createAccount' %}">Sign-up here.</a>
                                 </div>
@@ -66,7 +68,7 @@
                         <div class="column">
                             <div class="ui transparent placeholder segment">
                                 <div class="center_button">
-                                    <div class="ui massive black circular button">Proceed as Guest</div>
+                                    <div class="ui massive black button">Proceed as Guest</div>
                                 <div class="hidden content"><a href="{% url 'createCharacter' %}"></a></div>
                                 </div>
                             </div>
