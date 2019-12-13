@@ -49,12 +49,19 @@
                 <div class="three column row">
                     <div class="two wide column"></div>
                     <div class="ten wide column">
-                        <div class="center_vertically">
-                            <div class="center_button">
-                                {% if user.is_authenticated %}
+                        <p class="title_font_dark">Home Page</p>
+                        <div class="ui form">
+                            <div class="fields">
+                                <div class="field">
+                                    {% if user.is_authenticated %}
+                                    <p class="dark">Successful login/Create new account.</p>
                                     <div class="ui massive coral button"><a class="dark" href="{% url 'viewCharacters' %}">View Characters</a></div>
                                 {% endif %}
-                                <div class="ui massive green button"><a class="dark" href="{% url 'createCharacter' %}">Create a character</a></div>
+                                </div>
+                                <div class="field">
+                                    <p class="dark">&nbsp</p><!--USED TO MAKE BUTTONS LINE UP HORIZONTALLY-->
+                                    <div class="ui green massive submit button"><a class="dark" href="{% url 'createCharacter' %}">Create a character</a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
