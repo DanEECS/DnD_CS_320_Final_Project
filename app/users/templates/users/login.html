@@ -1,4 +1,6 @@
 {% extends "homepage/base.html" %}
+{% load static semanticui %}
+{% block page %}loginform{% endblock %}
 {% block content %}
     <div class="image_background1">
         <!--TOP NAVBAR-->
@@ -56,20 +58,23 @@
                                         It's great to see you again!
                                     </div>
                                 </div>
-                                <form method="POST">
+                                <form class="ui form" method="POST">
                                     {% csrf_token %}
+                                    {% render_form form %}
+                                    <button class="ui blue submit button" type="submit">Login</button>
+                                    <!--
                                     <fieldset class="form-row">
                                         <legend class="dark">Login</legend>
                                         {{ form }}
-                                        <!--
+
                                         <label>Username</label>
                                         <div class="ui left icon input">
                                             <input type="text" placeholder="Username">
                                             <i class="user icon"></i>
                                         </div>
-                                        -->
+
                                     </fieldset>
-                                    <!--
+
                                     <div class="field">
                                         <label>Password</label>
                                         <div class="ui left icon input">
@@ -77,10 +82,10 @@
                                             <i class="lock icon"></i>
                                         </div>
                                     </div>
-                                    -->
+
                                     <div class="form-row">
-                                        <button class="ui blue submit button" type="submit">Login</button>
-                                    </div>
+
+                                    </div>-->
                                     <!--<div class="hidden content"><a href="{% url 'viewCharacters' %}"></a></div>-->
                                 </form>
                                 <div class="ui bottom attached warning message">

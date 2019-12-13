@@ -52,4 +52,4 @@ class Equipment(TemplateView):
 
 
 class ViewCharacters(TemplateView):
-	template_name = 'viewCharacterList.html'
+	template_name = 'viewList.html'
