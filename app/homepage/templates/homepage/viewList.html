@@ -1,4 +1,6 @@
 {% extends "homepage/base.html" %}
+{% load static semanticui %}
+{% block page %}{% endblock %}
 {% block content %}
     <div class="image_background4">
         <!--TOP NAVBAR-->
@@ -60,7 +62,7 @@
                             <div class="ui form">
                                 <div class="fields">
                                     <div class="field">
-                                        <div class="ui blue massive submit button"><a class="dark" href="viewCharacter.html">View</a></div>
+                                        <div class="ui blue massive submit button"><a class="dark" href="{% url 'viewCharacter' %}">View</a></div>
                                     </div>
                                     <div class="field">
                                         <div class="ui teal massive submit button"><a class="dark" href="createNewCharacter.html">Edit</a></div>

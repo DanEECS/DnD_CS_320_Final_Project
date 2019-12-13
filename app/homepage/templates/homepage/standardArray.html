@@ -62,7 +62,7 @@
                         <div class="ui form">
                             <div class="fields">
                                 <div class="field">
-                                    <div class="ui lightgrey massive submit button"><a class="dark" href="standardArray.html">Standard Array</a></div>
+                                    <div class="ui lightgrey massive submit button"><a class="dark" href="{% url 'standard' %}">Standard Array</a></div>
                                     <div class="inline field"><label><p class="dark bigger_font">Strength</p></label>
                                         <div class="ui inline dropdown">
                                             <div class="text"></div>
@@ -125,15 +125,15 @@
                                     </div>
                                 </div>
                                 <div class="field">
-                                    <div class="ui lightgrey large submit button"><a class="dark" href="manual.html">Manual</a></div>
+                                    <div class="ui lightgrey large submit button"><a class="dark" href="{% url 'manual' %}">Manual</a></div>
                                 </div>
                                 <div class="field">
-                                    <div class="ui lightgrey large submit button"><a class="dark" href="pointBuy.html">Point Buy</a></div>
+                                    <div class="ui lightgrey large submit button"><a class="dark" href="{% url 'pointBuy' %}">Point Buy</a></div>
                                 </div>
                             </div>
                             <div class="field">
-                                <div class="ui violet large submit button"><a class="light" href="classAndSpecialization.html">Back</a></div>
-                                <div class="ui large yellow submit button"><a class="dark" href="classAndSpecialization.html">Next</a></div>
+                                <div class="ui violet large submit button"><a class="light" href="{% url 'addAttributes' %}">Back</a></div>
+                                <div class="ui large yellow submit button"><a class="dark" href="{% url 'charDescription' %}">Next</a></div>
                             </div>
                         </div>
 

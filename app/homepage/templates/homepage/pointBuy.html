@@ -128,8 +128,14 @@
                                 </div>
                             </div>
                             <div class="field">
-                                <div class="ui violet large submit button"><a class="light" href="addAttributes.html">Back</a></div>
-                                <div class="ui large yellow submit button"><a class="dark" href="charDescription.html">Next</a></div>
+                                    <div class="ui lightgrey large submit button"><a class="dark" href="{% url 'manual' %}">Manual</a></div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui lightgrey large submit button"><a class="dark" href="{% url 'standard' %}">Standard Array</a></div>
+                                </div>
+                            <div class="field">
+                                <div class="ui violet large submit button"><a class="light" href="{% url 'addAttributes' %}">Back</a></div>
+                                <div class="ui large yellow submit button"><a class="dark" href="{% url 'charDescription' %}">Next</a></div>
                             </div>
                         </div>
                     </div>
