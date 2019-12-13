@@ -42,7 +42,7 @@ https://stackoverflow.com/questions/36310296/looping-through-images-array-and-sh
     font-family: 'Muli', sans-serif;
     font-size: 1.5rem;
     background-color: #8ac04e; /*light green sampled from dragon image*/
-    opacity: 85%;
+    opacity: 100%;
     color: black;
 }
 .ui.massive.black.button {

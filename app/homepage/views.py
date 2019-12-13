@@ -25,7 +25,7 @@ def CreateCharacter(request):
 			form.save()
 			return redirect('classAndSpecialization')
 		else:
-			return render(request, 'CreateNewCharacter.html', {'form': form})
+			return render(request, 'createNewCharacter.html', {'form': form})
 	return render(request, 'createNewCharacter.html')
 
 
