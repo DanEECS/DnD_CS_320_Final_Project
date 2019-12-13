@@ -9,7 +9,6 @@ class CreateAccountForm(UserCreationForm):
         fields = ["username", "password1", "password2"]
         # field_classes = {'username': UsernameField}
         layout = [
-            ("Text", "<label class=\"ui header\">Create an Account</label>"),
             ("Field", "username"),
             ("Field", "password1"),
             ("Field", "password2")
@@ -32,7 +31,6 @@ class LoginForm(AuthenticationForm):
     class Meta:
         fields = ["username", "password"]
         layout = [
-            ("Text", "<label class=\"ui header\">Login</label>"),
             ("Field", "username"),
             ("Field", "password")
         ]

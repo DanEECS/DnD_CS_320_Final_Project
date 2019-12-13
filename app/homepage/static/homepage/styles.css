@@ -76,9 +76,15 @@ https://stackoverflow.com/questions/36310296/looping-through-images-array-and-sh
 .ui.labeled.input {
     padding: 5px;
 }
+.ui.header {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    color: #000000;
+}
 label {
     font-family: 'Muli', sans-serif;
     font-weight: bold;
+    font-size: 1rem;
 }
 label.bigger {
     padding: 10px;

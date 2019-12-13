@@ -52,6 +52,9 @@
                 <div class="ui placeholder segment">
                     <div class="ui two column very relaxed stackable grid">
                         <div class="middle aligned column">
+                            <div class="ui center aligned header">
+                                <p class="title_font_dark">Create an Account</p>
+                            </div>
                             <form class="ui form" method="POST">
                                 {% csrf_token %}
                                 {% render_form form %}
@@ -61,7 +64,7 @@
                         <div class="middle aligned column">
                             <div class="ui transparent placeholder segment">
                                 <div class="center_button">
-                                    <div class="ui massive black circular button">Proceed as Guest</div>
+                                    <div class="ui massive black button">Proceed as Guest</div>
                                     <div class="hidden content"><a href="{% url 'createCharacter' %}"></a></div>
                                 </div>
                             </div>

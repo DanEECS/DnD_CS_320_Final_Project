@@ -51,19 +51,22 @@
                 <div class="ui placeholder segment">
                     <div class="ui two column very relaxed stackable grid">
                         <div class="column">
-                            <div class="content-section">
-                                <form class="ui form" method="POST">
-                                    <p></p> <!--THIS JUST ADDS A LINE BREAK-->
-                                    {% csrf_token %}
-                                    {% render_form form %}
-                                    <button class="ui blue submit button" type="submit">Login</button>
-                                    <p></p> <!--THIS JUST ADDS A LINE BREAK-->
-                                </form>
-                                <div class="ui bottom attached warning message">
-                                    <i class="icon help"></i>
-                                    Need an account? <a href="{% url 'createAccount' %}">Sign-up here.</a>
+                            <div class="ui center aligned header">
+                                <p class="title_font_dark">Login here</p>
+                            </div>
+                            <form class="ui form" method="POST">
+                                {% csrf_token %}
+                                {% render_form form %}
+                                <button class="ui blue submit button" type="submit">Login</button>
+                                <p></p> <!--THIS JUST ADDS A LINE BREAK-->
+                            </form>
+                            <div class="ui center aligned compact transparent placeholder segment">
+                                <div class="ui compact bottom attached warning message">
+                                <i class="icon help"></i>
+                                Need an account? <a href="{% url 'createAccount' %}">Sign-up here.</a>
                                 </div>
                             </div>
+
                         </div>
                         <div class="column">
                             <div class="ui transparent placeholder segment">
