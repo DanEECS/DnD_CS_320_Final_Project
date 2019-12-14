@@ -49,16 +49,14 @@
                 <div class="three column row">
                     <div class="two wide column"></div>
                     <div class="eight wide column">
-                        <!--PROGRESS BAR NOT USED AS THESE PAGES WILL BE USED FOR EDITING CHARACTERS
-                        <div class="ui indicating active progress" data-percent="" id="progressBar">
-                            <div class="bar">
-                                <div class="progress"></div>
+                        <div class="ui form light">
+                            <div class="ui indicating active progress" data-percent="" id="progressBar">
+                                <div class="bar">
+                                    <div class="progress"></div>
+                                </div>
+                                    <div class="label">Progress on creating/editing character</div>
                             </div>
-                                <div class="label">Progress on your character</div>
-                        </div>
-                        -->
-                        <div class="ui form light"><p class="title_font_dark">Create/Edit Character - step 3</p>
-                            <p class="subtitle_font_dark">Character: (Name of character)<br></p>
+                            <p class="title_font_dark">Character: (Name of character)<br></p>
                             <p class="dark bigger_font">Total points remaining: <label>27</label><br></p>
                             <label>Choose values using arrows:</label>
                             <div class="inline field"><label><p class="dark bigger_font">Strength</p></label>
@@ -127,12 +125,6 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="field">
-                                    <div class="ui lightgrey large submit button"><a class="dark" href="{% url 'manual' %}">Manual</a></div>
-                                </div>
-                                <div class="field">
-                                    <div class="ui lightgrey large submit button"><a class="dark" href="{% url 'standard' %}">Standard Array</a></div>
-                                </div>
                             <div class="field">
                                 <div class="ui violet large submit button"><a class="light" href="{% url 'addAttributes' %}">Back</a></div>
                                 <div class="ui large yellow submit button"><a class="dark" href="{% url 'charDescription' %}">Next</a></div>
