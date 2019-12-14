@@ -1,6 +1,6 @@
 {% extends "homepage/base.html" %}
 {% block content %}
-    <div class="image_background2">
+    <div class="image_background4">
         <!--TOP NAVBAR-->
         <div class="ui container">
             <div class="text_background">
@@ -51,24 +51,24 @@
                     <div class="eight wide column">
                         <!--TO KEEP USER'S SELECTIONS ON REFRESH/PAGE NAV, USE "ITEM" -
                         "SPAN CLASS TEXT" WILL CLEAR SELECTIONS-->
-                        <div class="ui indicating active progress" data-percent="" id="progressBar">
+                        <div class="ui form light">
+                            <div class="ui indicating active progress" data-percent="30" id="progressBar">
                             <div class="bar">
                                 <div class="progress"></div>
                             </div>
                                 <div class="label">Progress on your character</div>
                         </div>
-                        <p class="subtitle_font dark">Character: (Name of character)</p>
+                        <p class="title_font_dark">Character: (Name of character)</p>
                         <label>Choose a method to add attributes:</label>
-                        <div class="ui form">
                             <div class="fields">
                                 <div class="field">
-                                    <div class="ui lightgrey massive submit button"><a class="dark" href="{% url 'manual' %}">Manual</a></div>
+                                    <div class="ui blue massive submit button"><a class="dark" href="{% url 'manual' %}">Manual</a></div>
                                 </div>
                                 <div class="field">
-                                    <div class="ui lightgrey massive submit button"><a class="dark" href="{% url 'standard' %}">Standard Array</a></div>
+                                    <div class="ui teal massive submit button"><a class="dark" href="{% url 'standard' %}">Standard Array</a></div>
                                 </div>
                                 <div class="field">
-                                    <div class="ui lightgrey massive submit button"><a class="dark" href="{% url 'pointBuy' %}">Point Buy</a></div>
+                                    <div class="ui orange massive submit button"><a class="dark" href="{% url 'pointBuy' %}">Point Buy</a></div>
                                 </div>
                             </div>
                             <div class="field">
@@ -76,7 +76,6 @@
                                 <div class="ui large yellow submit button"><a class="dark" href="{% url 'charDescription' %}">Next</a></div>
                             </div>
                         </div>
-
                     </div>
                     <div class="two wide column"></div>
                     <div class="four wide column">
